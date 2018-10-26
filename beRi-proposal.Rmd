@@ -3,7 +3,11 @@ title: "beRi-proposal"
 author: "Rob Gilmore"
 date: "October 25, 2018"
 output: pdf_document
+header-includes:
+    - \usepackage{graphicx}
+    - \usepackage{grffile}
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -11,9 +15,46 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Preface
 
-  The R community is composed of various types of people who use R in different ways.  However, one of the biggest themes amongst R users and the sciences in general is the idea of reproducible research.  "Containerization" via docker has become a useful means to make an R project reproducible.  The [containerit](https://github.com/o2r-project/containerit) and [rocker](https://github.com/rocker-org/rocker) projects are both great examples stemming from the usefulness of containerization.  However, R users don't alwasy have the means to utilize docker containers for R.  This can be particullarly true in academic settings where system administrators are under heavy workload and/or are hesitant to utilize a technology that could render the system [vulnerable](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface).  In these types of situations  [conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is by far one of the most popular options for reproducibility.  Other workflows involve the use of R packages including [packrat](https://github.com/rstudio/packrat), [checkpoint](https://github.com/RevolutionAnalytics/checkpoint)(MRAN), [miniCRAN](https://github.com/andrie/miniCRAN), [drat](https://github.com/eddelbuettel/drat), [workflowr](https://github.com/jdblischak/workflowr), and [rbundler](https://cran.r-project.org/web/packages/rbundler/index.html).  While these packages have their use cases, they limit users to interactive R (the R shell).
-  Another useful concept for programming languages in general is the idea of a programming library coupled with a package manager.  Python has [pip](https://pypi.org/project/pip/) and [PyPi](https://pypi.org/), Javascript has the [npm-client](https://github.com/npm/cli) and [npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has the [gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  R has [CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), which are programming libraries.  However, R doesn't have a traditional package manager for installing these packages from the command line.
-  In certain use cases it might also be important for R users to install R from source.  Specifically, HPC systems generally need R installed from source because system admins want specific configurations.  HPC system users also might want to install R on their user profile in order to get a specific version of R or to have a custom configuration of R in their environment.  Other programming languages including Python ([pyenv](https://github.com/pyenv/pyenv)) and Ruby ([rbenv](https://github.com/rbenv/rbenv) and [ruby-build](https://github.com/jdblischak/workflowr)) have third party interfaces that manage the installation and management of various versions of the language.
-  With these ideas in mind we would like to propose the [beRi](https://github.com/datasnakes/beRi): A Suite of Tools for Managing R.  beRi will depend on a series of independent tools that work towards providing new options for managing R virtual environments, R package management, R installation management, and other R utilities all from the command line.  beRi will be built on top of this toolset, and provide a more hollistic experience by adding project management and configuration.
+One of the biggest themes amongst R users and the sciences in general is the idea of reproducible research.  "Containerization" via docker has become a useful means to make an R project reproducible.  The [containerit](https://github.com/o2r-project/containerit) and [rocker](https://github.com/rocker-org/rocker) projects are both great examples stemming from the usefulness of containerization.  However, R users don't alwasy have the means to utilize docker containers for R.  This can be particullarly true in academic settings where system administrators are under heavy workload and/or are hesitant to utilize a technology that could render the system [vulnerable](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface).  In these types of situations  [conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is by far one of the most popular options for reproducibility.  Other workflows involve the use of R packages including [packrat](https://github.com/rstudio/packrat), [checkpoint](https://github.com/RevolutionAnalytics/checkpoint)(MRAN), [miniCRAN](https://github.com/andrie/miniCRAN), [drat](https://github.com/eddelbuettel/drat), [workflowr](https://github.com/jdblischak/workflowr), and [rbundler](https://cran.r-project.org/web/packages/rbundler/index.html).  While these packages have their use cases, they limit users to interactive R (the R shell).
+
+Another useful concept for programming languages in general is the idea of a programming library coupled with a package manager.  Python has [pip](https://pypi.org/project/pip/) and [PyPi](https://pypi.org/), Javascript has the [npm-client](https://github.com/npm/cli) and [npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has the [gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  R has [CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), which are programming libraries.  However, R doesn't have a traditional package manager for installing these packages from the command line.
+
+In certain use cases it might also be important for R users to install R from source.  Specifically, HPC systems generally need R installed from source because system admins want specific configurations.  HPC system users also might want to install R on their user profile in order to get a specific version of R or to have a custom configuration of R in their environment.  Other programming languages including Python ([pyenv](https://github.com/pyenv/pyenv)) and Ruby ([rbenv](https://github.com/rbenv/rbenv) and [ruby-build](https://github.com/jdblischak/workflowr)) have third party interfaces that manage the installation and management of various versions of the language.
+
+With these ideas in mind we would like to propose the [beRi](https://github.com/datasnakes/beRi): A Suite of Tools for Managing R.  beRi will depend on a series of independent tools that work towards providing new options for managing R virtual environments, R package management, R installation management, and other R utilities all from the command line.  beRi will be built on top of this toolset, and provide a more hollistic experience by adding project management and configuration.
+
+\newpage
+
+# Scope
+
+As a well developed language, R is loved by a diverse group of individuals and is [rising in popularity](https://blog.revolutionanalytics.com/popularity/) for a variety of reasons.  R is trafficed most notably by individuals from the healthcare industry, academic institutions, and government entities as seen by a recent stackoverflow analysis:
+  
+```{r fig.width = 2, fig.align='center', echo=FALSE}
+knitr::include_graphics("data/stackof_R_industry_growth.png")
+```
+
+Bioinformatics professionals are incorporated into all of the top 3 categories.  It is in fact the bioinformatician that is our target audience for the beRi Suite of Tools.  Other interested parties include system administrators, HPC system users, R package developers, and lovers of the command line.  beRi will also appeal new users of R who are used to Python and/or command line interfaces.  While the current workfow options continue to allow R users to successfully perform R analysis, a good sign of a healthy programming ecosystem is the availability of multiple solutions to the same problem.  The most popular options remain to be conda/bioconda, packrat/jetpack, and docker (rocker/containerit) respectively.
+
+Docker seems to be a very hollistic solution as containerizations produces an exact replicate of your project's environment at the operating system level.  The issue with docker is that there are a limited number of individuals in academia and the healthcare industry who can utilize this technology.  RStudio's packrat solution is also a great tool, but packrat builds for large projects can be increadibly slow.  Anaconda's ecosystem for R is not only a tool that is most similar to our approach, but has also been the leading question when we have proposed beRi in informal settings like reddit:
+
+> "How does this differ from conda?"
+> "What are the benefits of using beRi over conda?"
+
+A more detailed comparison of beRi and conda (along with other popular tools) can be seen in the table below.  The main benefit and goal of beRi is to connect users directly to the R ecosystem (CRAN, Bioconductor, MRAN, GitHub, etc.), and provide a means for micromanaging the R environment in one toolset.  While conda accomplishes some of the same goals, the CLI is inevitably attached to anaonda's repositories.
+
+ <!-- Insert Table -->
+
+In this context beRi is not meant to replace existing tools, but to incorporate another toolset into the R ecosystem.  We would like to provide alternative workflows as well as new technologies for the R programming language that could help grow and maintain the R community at large.  
+
+# The Plan
+
+
+# The Team
+
+# Project Milestones
+
+# How Can the ISC Help
+
+# Dissemination
   
   

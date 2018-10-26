@@ -2,16 +2,18 @@
 title: "beRi-proposal"
 author: "Rob Gilmore"
 date: "October 25, 2018"
-output: pdf_document
-header-includes:
-    - \usepackage{graphicx}
-    - \usepackage{grffile}
+output: 
+  pdf_document:
+    toc: true
+linkcolor: blue 
 ---
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+\newpage
 
 # Preface
 
@@ -49,7 +51,15 @@ In this context beRi is not meant to replace existing tools, but to incorporate 
 # The Plan
 
 
+\newpage
+
 # The Team
+
+Our team consists of several "tiers" of individuals based on experience level and willingness to contribute in the long term.  In the short term we are using the terms "Projecet Manager", "Lead Maintainer", and "Contributor" to manage our responsibilities.  The beRi team will develop under the [DataSnakes](https://github.com/datasnakes) organization on GitHub.  All of the current contributors participated in developing beRi at the Hackseq 2018 bioinformatics hackathon in Vancouver, BC.  Team beRi walked away from the hackathon as [winners](https://www.hackseq.com/) by popular vote after developing compelling demos of the command line tools.
+
+## Project Manager
+
+beRi was originally concieved by [Rob Gilmore](https://www.linkedin.com/in/robert-gilmore-7b451592).  At Hackseq 2018 his leadership skills and projecet management experience guided Team beRi to success as the winners of the hackathon.  Gilmore's skillsets are derived from his education in [Biomedical Engineering](https://www.abe.msstate.edu/academics/undergraduate/biomedical-engineering/curriculum/) at Mississippi State University, professional development at [Engineering Research and Development Center](https://www.erdc.usace.army.mil/), and extensive Bioinformatics experience as a Researcher in the fields of Genetics and Psychiatry using non-human primate models.  In his current position at the [University of Mississippi Medical Center](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html) he has utilized the [Mississippi Center for Computational Research's](https://mcsr.olemiss.edu/research/) HPC system to manage and develop large scale bioinformatics pipelines using Linux, Windows, Python, R, and bash.
 
 # Project Milestones
 

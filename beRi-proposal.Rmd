@@ -19,7 +19,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Reproducibility is one of the cornerstones of science advancement according to the [NIH](https://www.nih.gov/research-training/rigor-reproducibility). Given R's increasing popularity in biotech and research as well as the aims of rOpenSci, there is a great need to provide frameworks or tools that seek to improve reproducibility and offer R users more comprehensive and easier options to achieve reproducibility. Currently, there are a number of R packages that seek to improve reproducibility. The [containerit](https://github.com/o2r-project/containerit) and [rocker](https://github.com/rocker-org/rocker) projects are examples that incorporate containerization via docker. However, many R users in biotech and research (specifically academic environments) don't typically have access to docker given it's a newer technology, it's not widely adopted by academic institutions due to potential system [vulnerabilities](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface), and it typically requires administrative privileges. In these types of situations, [conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is  a preferred framwork and by far one of the most popular options for reproducibility.  In other cases, users to different R packages including [packrat](https://github.com/rstudio/packrat), [checkpoint](https://github.com/RevolutionAnalytics/checkpoint)(MRAN), [miniCRAN](https://github.com/andrie/miniCRAN), [drat](https://github.com/eddelbuettel/drat), [workflowr](https://github.com/jdblischak/workflowr), and [rbundler](https://cran.r-project.org/web/packages/rbundler/index.html) for reproducibility.  While these packages have tremendous value to R users, they limit users to using an interactive R session (the R shell).
 
-## Improving reproducibility by creating a framework that allows R installation and R package management via the command-line
+# Scope 
+
+## Comparing Programming Languages
 
 Many of the popular programming languages in the bioinformatics community have a command-line package manager that offers access to a standard or customizable package repository.  Python has [pip](https://pypi.org/project/pip/) and [PyPi](https://pypi.org/), Javascript has the [npm-client](https://github.com/npm/cli) and [npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has the [gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  R has [CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), which are package repositories, but R doesn't have an easy (as compared to pip or npm) way to install packages globally or locally via the command-line. Improving the management of R package installation and removal could boost reproducibility for projects and boost the userbase by offering an option specifically for the bioinformatics community.
 
@@ -29,7 +31,7 @@ With these ideas in mind, we propose [beRi](https://github.com/datasnakes/beRi),
 
 \newpage
 
-# Scope
+## Comparing R Workflows
 
 As a well-developed language, R is loved and used by a diverse group of individuals and is [rising in popularity](https://blog.revolutionanalytics.com/popularity/) for a variety of reasons.  R is trafficked, most notably, by individuals from the healthcare industry, academic institutions, and government entities as seen by a recent stackoverflow analysis:
   

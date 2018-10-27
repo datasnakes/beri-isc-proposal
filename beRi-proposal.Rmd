@@ -52,9 +52,6 @@ A more detailed comparison of beRi and conda (along with other popular tools) ca
 
 In this context beRi is not meant to replace existing tools, but to incorporate another toolset into the R ecosystem.  We would like to provide alternative workflows as well as new technologies for the R programming language that could help grow and maintain the R community at large.  
 
-# The Plan
-
-
 \newpage
 
 # The Team
@@ -86,6 +83,8 @@ beRi was originally concieved by [Rob Gilmore](https://www.linkedin.com/in/rober
 ## Other Interested Parties
 
 <!-- Hamid Younesy -->
+
+# The Plan
 
 # Project Milestones
 

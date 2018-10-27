@@ -105,7 +105,7 @@ rinse (short for R installer) is currently a simple installer for the latest ver
 
 ## Standalone CLI - rut
 
-rut (short for R utilities) will be an R package manager that will also be able to set up local CRAN-like repositories as well as manage custom R configuration files like .Rprofile and .Renviron.  In its current iteraction, rut can install packages from CRAN using R's remotes package. As the least developed package and likely the most difficult to implement, rut will require more attention in order to develop it with best practices and effectively integrate it with beRi. With regards to rut, we have discussed wrapping the R CMD INSTALL command, integrating a simpler version of [jetpack](https://github.com/ankane/jetpack), or utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
+rut (short for R utilities) will be an R package manager that will also be able to set up local CRAN-like repositories as well as manage custom R configuration files like .Rprofile and .Renviron.  In its current iteration, rut can install packages from CRAN using R's remotes package. As the least developed package and likely the most difficult to implement, rut will require more attention in order to develop it with best practices and effectively integrate it with beRi. With regards to rut, we have discussed wrapping the R CMD INSTALL command, integrating a simpler version of [jetpack](https://github.com/ankane/jetpack), or utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
 
 ## Integrated CLI - beRi
 

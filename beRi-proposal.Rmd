@@ -1,6 +1,6 @@
 ---
-title: "beRi-proposal"
-author: "Rob Gilmore"
+title: "beRi Environments for R Installations"
+subtitle: "A suite of tools for managing R."
 date: "October 25, 2018"
 output: 
   pdf_document:

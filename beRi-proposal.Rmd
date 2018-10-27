@@ -1,6 +1,6 @@
 ---
-title: "beRi-proposal"
-author: "Rob Gilmore"
+title: "beRi Environments for R Installations"
+subtitle: "A suite of tools for managing R."
 date: "October 25, 2018"
 output: 
   pdf_document:
@@ -52,9 +52,6 @@ A more detailed comparison of beRi and conda (along with other popular tools) ca
 
 In this context beRi is not meant to replace existing tools, but to incorporate another toolset into the R ecosystem.  We would like to provide alternative workflows as well as new technologies for the R programming language that could help grow and maintain the R community at large.  
 
-# The Plan
-
-
 \newpage
 
 # The Team
@@ -83,9 +80,34 @@ beRi was originally conceived by [Rob Gilmore](https://www.linkedin.com/in/rober
 
 <!-- Michelle Lee -->
 
+<!-- Kristen Bystrom -->
+
+## Other Interested Parties
+
 <!-- Hamid Younesy -->
 
-<!-- Kristen Bystrom -->
+# The Plan
+
+beRi is a set of Python packages which is composed of a virtual environment manager for R ([renv](https://github.com/datasnakes/renv)), an R installation and R version manager ([rinse](https://github.com/datasnakes/rinse)), and an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories ([rut](https://github.com/datasnakes/rut)). These packages will be developed in separate repositories as standalone or fully independent CLI’s, and [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository.  However, the beRi CLI will depend on the other three packages, which will provide an enhanced experience as well as project management support.
+
+To begin these packages will be built with Python for Linux systems starting with the latest Ubuntu release with long term support.  We will optimize our Python packages for the R ecosystem by using the [R manuals](https://cran.r-project.org/doc/manuals/), which can be found on the CRAN website.  Following stable builds we will test under various Linux distributions followed by Windows and finally MacOS systems.  These python packages are currently being managed by [poetry](https://github.com/sdispater/poetry) for ease of use and intuitive workflow, however, we have also considered switching to [pipenv](https://github.com/pypa/pipenv) in the future if poetry does not satisfy our needs.  The [click](https://palletsprojects.com/p/click/) package will be used to build the command line interface, which is the primary feature of these tools.  
+
+
+## Standalone CLI - renv
+
+renv (short for R virtual environment) is a python style virtual environment package for R, and is the most developed of the three standalone tools.  It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron).  A directory will be utilized in the users home directory (~/.renv) as a repository for any environment created.  The environments created with renv will not only be configurable with the normal .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (~/.renv/<env-name>/renv.yaml).  This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install.  The renv CLI will also contain a default yaml file for all newly created environments.
+
+## Standalone CLI - rinse
+
+rinse (short for R installer) is currently a simple installer for the latest version of R.  In the future we would like to implement features similar to [pyvenv](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md).  This includes installing/uninstalling R from source, managing some of R's dependencies, and switching in between version of R.  Installing Microsoft R-Open or [other R implementations](https://en.wikipedia.org/wiki/R_(programming_language)#Implementations) will also be considered.  After linux development is stable, a forseen goal will be to help install Rtools for Windows.
+
+## Standalone CLI - rut
+
+rut (short for R utilities) will be an R package manager that will also be able to set up local CRAN-like repositories as well as manage custom R configuration files like .Rprofile and .Renviron.  In it's current form rut can install packages from CRAN, but the underlying scripting was quickly put together towards the end of Hackseq 2018.  All of our development strategies will require further dialog, and, as the most underdeveloped and most difficult package to implement, rut will need much more attention placed on choosing a proper development strategy.  In the past we have discussed wrapping the R CMD INSTALL command, and utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
+
+## Integrated CLI - beRi
+
+The main initial goal for the beRi Suite of Tools was to create standalone Python packages that were completely independent of each other.  To develop the base of our ideas (renv, rinse, and rut) we looked to other well developed programming languages for inspiration.  Further insight has come from R manuals and various documentation in order to keep the R ecosystem and R community in mind.  The integration of renv, rinse, and rut under the beRi CLI will help us develop a custom project workflow with one cohesive interface.  Once the standalone tools are at a functioning level, we will develop an analogous YAML configuration workflow for each package.  This configuration will be leveraged in the beRi CLI.  Not only will this allow us to configure our environment with one YAML file, but it will also allow us to develop a beRi file-system that centralizes our envrionment's files and folders.  The ~/.beRi folder for instance will contain any renv environments, R installations, CRAN-like repositories, and .libPaths() associated with beRi processes by default.  Further dialog will be needed to discuss managing projects with the beRi CLI, which we will continue to do throughout the development lifecycle.    While the development of beRi will inevitably effect some of the changes we make to the standalone CLI, we will never limit renv, rinse, or rut by linking them to each other or to beRi.
 
 # Project Milestones
 

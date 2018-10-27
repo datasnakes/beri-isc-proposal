@@ -86,6 +86,14 @@ beRi was originally concieved by [Rob Gilmore](https://www.linkedin.com/in/rober
 
 # The Plan
 
+beRi is a set of Python packages which is composed of a virtual environment manager for R ([renv](https://github.com/datasnakes/renv)), an R installation and R version manager ([rinse](https://github.com/datasnakes/rinse)), and an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories ([rut](https://github.com/datasnakes/rut)). These packages will be developed in separate repositories as standalone or fully independent CLI’s, and [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository.  However, the beRi CLI will depend on the other three packages, which will provide an enhanced experience as well as project management support.
+
+To begin these packages will be built with Python for Linux systems starting with the latest Ubuntu release with long term support.  Following stable builds we will test under various Linux distributions followed by Windows and finally MacOS systems.  These python packages are currently being managed by [poetry](https://github.com/sdispater/poetry) for ease of use and intuitive workflow, however, we have also considered switching to [pipenv](https://github.com/pypa/pipenv) in the future if poetry does not satisfy our needs.  The [click](https://palletsprojects.com/p/click/) package will be used to build the command line interface, which is the primary feature of these tools.
+
+## Standalone CLI - renv
+
+renv (short for R virtual environment) is a python style virtual environment package for R, and is the most developed of the three standalone tools.  It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron).  A directory will be utilized in the users home directory (~/.renv) as a repository for any environment created.  The environments created with renv will not only be configurable with the normal .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (~/.renv/<env-name>/renv.yaml).  This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install.  The renv CLI will also contain a default yaml file for all newly created environments.
+
 # Project Milestones
 
 # How Can the ISC Help

@@ -56,19 +56,23 @@ In this context beRi is not meant to replace existing tools, but to incorporate 
 
 # The Team
 
+We are passionate about reproducible work in science, but have experienced the limitations of the existing tools that support reproducibility of analysis with R. Bridging that gap was the motivation for prototyping beRi at the hackseq hackathon, and winning the popular votes shows that there is a strong interest and need for this tool in at least the bioinformatics community.
+
+We are familiar with Python, R, and Bash from our daily work, and plan to use these languages as the building blocks for the project. Some of us have software engineering experience to help with the development process. Since we will be both makers and users of this tool and are surrounded by fellow R users in science, we can continually improve beRi by adapting frequent feedbacks from ourselves and our community who will be the end users of beRi.
+
 Our team consists of several "tiers" of individuals based on experience level and willingness to contribute in the long term.  In the short term we are using the terms "Projecet Manager", "Lead Maintainer", and "Contributor" to manage our responsibilities.  The beRi team will develop under the [DataSnakes](https://github.com/datasnakes) organization on GitHub.  All of the current contributors participated in developing beRi at the Hackseq 2018 bioinformatics hackathon in Vancouver, BC.  Team beRi walked away from the hackathon as [winners](https://www.hackseq.com/) by popular vote after developing compelling demos of the command line tools.
 
 ## Project Manager
 
-beRi was originally concieved by [Rob Gilmore](https://www.linkedin.com/in/robert-gilmore-7b451592).  At Hackseq 2018 his leadership skills and projecet management experience guided Team beRi to success as the winners of the hackathon.  Gilmore's skillsets are derived from his education in [Biomedical Engineering](https://www.abe.msstate.edu/academics/undergraduate/biomedical-engineering/curriculum/) at Mississippi State University, professional development at [Engineering Research and Development Center](https://www.erdc.usace.army.mil/), and extensive Bioinformatics experience as a Researcher in the fields of Genetics and Psychiatry using non-human primate models.  In his current position at the [University of Mississippi Medical Center](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html) he has utilized the [Mississippi Center for Computational Research's](https://mcsr.olemiss.edu/research/) HPC system to manage and develop large scale bioinformatics pipelines using Linux, Windows, Python, R, and bash.
+beRi was originally concieved by [**Rob Gilmore**](https://www.linkedin.com/in/robert-gilmore-7b451592).  At Hackseq 2018 his leadership skills and projecet management experience guided Team beRi to success as the winners of the hackathon.  Gilmore's skillsets are derived from his education in [Biomedical Engineering](https://www.abe.msstate.edu/academics/undergraduate/biomedical-engineering/curriculum/) at Mississippi State University, professional development at [Engineering Research and Development Center](https://www.erdc.usace.army.mil/), and extensive Bioinformatics experience as a Researcher in the fields of Genetics and Psychiatry using non-human primate models.  In his current position at the [University of Mississippi Medical Center](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html) he has utilized the [Mississippi Center for Computational Research's](https://mcsr.olemiss.edu/research/) HPC system to manage and develop large scale bioinformatics pipelines using Linux, Windows, Python, R, and bash.
 
 ## Lead Maintainers
 
 <!-- Shaurita -->
 
-<!-- Bruno -->
+**Santina Lin** was a Master student in bioinformatics at the University of British Columbia. She used R for data analysis and visualization, and has taught R and statistics in a graduate level course as a teacher assistant. She is currently a software engineer at Microsoft and works on maintaining the RevoScaleR package and adding R and Python runtime to SQL server.
 
-<!-- Santina -->
+**Bruno Grande** is a PhD candidate working on cancer genomics in [Ryan Morin’s lab](https://morinlab.github.io/) at Simon Fraser University. He's an advocate for best practices in academic data science to overcome the reproducibility crisis affecting most of scholarly research. He dreams of publishing a Git repository that contains everything needed to reproduce every analysis from his PhD project with a single command. beRi plays an important role in making this dream possible. 
 
 ## Contributors
 

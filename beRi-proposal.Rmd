@@ -105,6 +105,8 @@ rut (short for R utilities) will be an R package manager that will also be able 
 
 ## Integrated CLI - beRi
 
+The main initial goal for the beRi Suite of Tools was to create standalone Python packages that were completely independent of each other.  To develop the base of our ideas (renv, rinse, and rut) we looked to other well developed programming languages for inspiration.  Further insight has come from R manuals and various documentation in order to keep the R ecosystem and R community in mind.  The integration of renv, rinse, and rut under the beRi CLI will help us develop a custom project workflow with one cohesive interface.  Once the standalone tools are at a functioning level, we will develop an analogous YAML configuration workflow for each package.  This configuration will be leveraged in the beRi CLI.  Not only will this allow us to configure our environment with one YAML file, but it will also allow us to develop a beRi file-system that centralizes our envrionment's files and folders.  The ~/.beRi folder for instance will contain any renv environments, R installations, CRAN-like repositories, and .libPaths() associated with beRi processes by default.  Further dialog will be needed to discuss managing projects with the beRi CLI, which we will continue to do throughout the development lifecycle.    While the development of beRi will inevitably effect some of the changes we make to the standalone CLI, we will never limit renv, rinse, or rut by linking them to each other or to beRi.
+
 # Project Milestones
 
 # How Can the ISC Help

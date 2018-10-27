@@ -1,7 +1,7 @@
 ---
 title: "beRi Environments for R Installations"
-subtitle: "A suite of tools for managing R."
-date: "October 25, 2018"
+subtitle: "A suite of tools for managing R"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output: 
   pdf_document:
     toc: true
@@ -90,7 +90,7 @@ beRi was originally conceived by [Rob Gilmore](https://www.linkedin.com/in/rober
 
 beRi is a suite of Python packages which is composed of a virtual environment manager for R ([renv](https://github.com/datasnakes/renv)), an R installation and R version manager ([rinse](https://github.com/datasnakes/rinse)), and an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories ([rut](https://github.com/datasnakes/rut)). These packages will be developed in separate repositories as standalone or fully independent CLI’s, and [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository.  However, the beRi CLI will depend on the other three packages, which will provide an enhanced and comprehensive experience as well as project management support.
 
-To begin, these packages will be built with Python for Linux systems starting with the latest Ubuntu release with long term support.  We will optimize our Python packages for the R ecosystem by using the [R manuals](https://cran.r-project.org/doc/manuals/), which can be found on the CRAN website.  Following stable builds, we will test under various Linux distributions followed by Windows and finally MacOSX systems.  These python packages are currently being managed by [poetry](https://github.com/sdispater/poetry) for ease of use and intuitive workflow; however, we have also considered switching to [pipenv](https://github.com/pypa/pipenv) in the future if poetry does not satisfy our needs.  The [click](https://palletsprojects.com/p/click/) package will be used to build the command line interface, which is the primary feature of these tools.  
+To begin, these packages will be built with Python for Linux systems starting with the latest Ubuntu release with long term support.  We will optimize our Python packages for the R ecosystem by using the [R manuals](https://cran.r-project.org/doc/manuals/), which can be found on the CRAN website.  Following stable builds, we will test under various Linux distributions, followed by Windows 7 and above, and finally, macOS systems.  These python packages are currently being managed by [poetry](https://github.com/sdispater/poetry) for ease of use and intuitive workflow; however, we have also considered switching to [pipenv](https://github.com/pypa/pipenv) in the future if poetry does not satisfy our needs.  The [click](https://palletsprojects.com/p/click/) package will be used to build the command line interface, which is the primary feature of these tools.  
 
 
 ## Standalone CLI - renv

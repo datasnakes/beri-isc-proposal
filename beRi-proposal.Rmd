@@ -94,6 +94,10 @@ To begin these packages will be built with Python for Linux systems starting wit
 
 renv (short for R virtual environment) is a python style virtual environment package for R, and is the most developed of the three standalone tools.  It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron).  A directory will be utilized in the users home directory (~/.renv) as a repository for any environment created.  The environments created with renv will not only be configurable with the normal .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (~/.renv/<env-name>/renv.yaml).  This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install.  The renv CLI will also contain a default yaml file for all newly created environments.
 
+## Standalone CLI - rinse
+
+rinse (short for R installer) is currently a simple installer for the latest version of R.  In the future we would like to implement features similar to [pyvenv](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md).  This includes installing/uninstalling R from source, managing some of R's dependencies, and switching in between version of R.  Installing Microsoft R-Open or [other R implementations](https://en.wikipedia.org/wiki/R_(programming_language)#Implementations) will also be considered.  After linux development is stable, a forseen goal will be to help install Rtools for Windows.
+
 # Project Milestones
 
 # How Can the ISC Help

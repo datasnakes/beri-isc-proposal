@@ -72,7 +72,7 @@ beRi was originally conceived by [**Rob Gilmore**](https://www.linkedin.com/in/r
 
 * **Santina Lin** is currently a software engineer at Microsoft and works on maintaining the [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package as well as adding R and Python runtime to SQL server. She completed her master's degree in Bioinformatics at the University of British Columbia where she used R for data analysis and visualization. She has also taught R and statistics in a graduate level course as a teacher assistant.
 
-**Bruno Grande** is a PhD candidate working on cancer genomics in [Ryan Morin’s lab](https://morinlab.github.io/) at Simon Fraser University. He's an advocate for best practices in academic data science to overcome the reproducibility crisis affecting most of scholarly research. He dreams of publishing a Git repository that contains everything needed to reproduce every analysis from his PhD project with a single command. beRi plays an important role in making this dream possible. 
+* **Bruno Grande** is a PhD candidate working on cancer genomics in [Ryan Morin’s lab](https://morinlab.github.io/) at Simon Fraser University. He's an advocate for best practices in academic data science to overcome the reproducibility crisis affecting most of scholarly research. He dreams of publishing a Git repository that contains everything needed to reproduce every analysis from his PhD project with a single command. beRi plays an important role in making this dream possible. 
 
 ## Contributors
 

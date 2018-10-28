@@ -3,10 +3,8 @@ title: "beRi Environments for R Installations"
 subtitle: "A suite of tools for managing R"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output: 
-  github_document:
-    pandoc_args: [ 
-      "--output=long-README.md" 
-    ] 
+  github_document: 
+    default
   pdf_document:
     toc: true
 linkcolor: blue 

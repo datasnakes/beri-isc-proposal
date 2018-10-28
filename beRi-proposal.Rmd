@@ -33,9 +33,9 @@ With these ideas in mind, we propose [beRi](https://github.com/datasnakes/beRi),
 
 ## Comparing R Workflows
 
-As a well-developed language, R is loved and used by a diverse group of individuals and is [rising in popularity](https://blog.revolutionanalytics.com/popularity/) for a variety of reasons.  R is trafficked, most notably, by individuals from the healthcare industry, academic institutions, and government entities as seen by a recent stackoverflow analysis:
+As a well-developed language, R is loved and used by a diverse group of individuals and is [rising in popularity](https://blog.revolutionanalytics.com/popularity/) for a variety of reasons.  R is trafficked, most notably, by individuals from the healthcare industry, academic institutions, and government entities as seen by a recent stackoverflow analysis [[1](https://stackoverflow.blog/2017/10/10/impressive-growth-r/)]:
   
-```{r fig.width = 2, fig.align='center', echo=FALSE}
+```{r fig.width = 2, fig.align='center', echo=FALSE, out.width="55%"}
 knitr::include_graphics("data/stackof_R_industry_growth.png")
 ```
 
@@ -119,32 +119,35 @@ The planning phase is a continuous effort.  In order to establish a higher level
 
 For the first year the beRi Suite of Tools will be tested under the Linux OS.  The dates represent estimated point of completion based on the pace we set at hackseq18.  More accurate dates will be possible after further managing our workload with ZenHub.
 
-* Development for Linux (Ubuntu LTS) - June 15, 2019
-  * renv - February 15, 2019
+* Development for Linux (Ubuntu LTS) - June 2019
+  * renv - February 2019
     * Successfully Virtual Environments - Completed
-    * Resolve minor R warnings - January 15, 2019
-    * Code clean up - February 15, 2019
-  * rut - March 15, 2019
-    * Package Manager - February 15, 2019
-    * Code clean up - March 15, 2019
+    * Resolve minor R warnings - January 2019
+    * Code clean up - February 2019
+  * rut - March 2019
+    * Package Manager - February 2019
+    * Code clean up - March 2019
     * Secondary Goal - Manage local CRAN-like repositories
     * Secondary Goal - Manage packrat projects
-  * rinse - April 15, 2019
-    * Manage the Installation of R from source - March 15, 2019
-    * Add Microsoft R Open - April 15, 2019
-    * Code clean up - May 15, 2019
+  * rinse - April 2019
+    * Manage the Installation of R from source - March 2019
+    * Add Microsoft R Open - April 2019
+    * Code clean up - May 2019
     * Secondary Goal - Reverse engineer pyenv
     * Consider other distributions of R
-  * beRi - May 15, 2019
-    * YAML config for renv, rut, rinse - April 15, 2019
-    * YAML config for beRi - May 15, 2019
-    * beRi filesystem - June 15, 2019
-    * Code clean up - June 15, 2019
+  * beRi - May 2019
+    * YAML config for renv, rut, rinse - April 2019
+    * YAML config for beRi - May 2019
+    * beRi filesystem - June 2019
+    * Code clean up - June 2019
     * Secondary Goal - Add beRi projects
-* Development for other Linux Distributions - July 15, 2019
+* Development for other Linux Distributions - July 2019
 
 # How Can the ISC Help
 
 # Dissemination
-  
+
+# References
+
+
   

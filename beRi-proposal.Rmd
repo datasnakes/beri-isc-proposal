@@ -33,9 +33,9 @@ With these ideas in mind, we propose [beRi](https://github.com/datasnakes/beRi),
 
 ## Comparing R Workflows
 
-As a well-developed language, R is loved and used by a diverse group of individuals and is [rising in popularity](https://blog.revolutionanalytics.com/popularity/) for a variety of reasons.  R is trafficked, most notably, by individuals from the healthcare industry, academic institutions, and government entities as seen by a recent stackoverflow analysis [1](https://stackoverflow.blog/2017/10/10/impressive-growth-r/):
+As a well-developed language, R is loved and used by a diverse group of individuals and is [rising in popularity](https://blog.revolutionanalytics.com/popularity/) for a variety of reasons.  R is trafficked, most notably, by individuals from the healthcare industry, academic institutions, and government entities as seen by a recent stackoverflow analysis [[1](https://stackoverflow.blog/2017/10/10/impressive-growth-r/)]:
   
-```{r fig.width = 2, fig.align='center', echo=FALSE}
+```{r fig.width = 2, fig.align='center', echo=FALSE, out.width="55%"}
 knitr::include_graphics("data/stackof_R_industry_growth.png")
 ```
 

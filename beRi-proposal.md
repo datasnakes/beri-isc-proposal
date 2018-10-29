@@ -162,3 +162,7 @@ We will regularly post updates about this project on beRi's [website](https://ww
 
 References
 ==========
+
+\[1\] Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL
+
+\[2\] Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL

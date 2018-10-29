@@ -151,7 +151,7 @@ How Can The ISC Help
 The total costs of this project will be $22,700, split into the following items:
 
 -   Travel costs for a project mid-completion meeting in a location where the team leaders can convene ($3000).
--   Compensation to team leaders/members and project dissemination including publication costs ($19,000).
+-   Compensation to the project manager and lead maintainers as well as project dissemination including publication costs ($19,000).
 -   Project management tools/subscriptions including Slack and Todoist and a `.com` or `.org` website via Namecheap ($700).
 
 Dissemination

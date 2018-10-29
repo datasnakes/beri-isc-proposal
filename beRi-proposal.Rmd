@@ -72,7 +72,7 @@ beRi was originally conceived by [**Rob Gilmore**](https://www.linkedin.com/in/r
 
 * **Shaurita D. Hutchins** is a Researcher II in the [Department of Psychiatry and Human Behavior's division of Neurobiology and Behavior Research](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html) at the University of Mississippi Medical Center. She received her Master of Science in Biological Sciences from Mississippi College. She has extensive experience with Python package development, R package development, web development (including rshiny apps and flask apps), genomics pipeline development, data analysis using Python, and data visualization using R. She is the co-creator of the [Datasnakes](https://www.datasnakes.org/), an open-source and open-science organization and acts as the maintainer for multiple repositories/projects for the organization.
 
-* **Santina Lin** is currently a software engineer at Microsoft and works on maintaining the [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package as well as adding R and Python run time to SQL server. She completed her master's degree in Bioinformatics at the University of British Columbia where she used R for data analysis and visualization. She has also taught R and statistics in a graduate level course as a teacher assistant.
+* **Santina Lin** is currently a software engineer at Microsoft and works on maintaining the [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package as well as adding R and Python runtime to SQL server. She completed her master's degree in Bioinformatics at the University of British Columbia where she used R for data analysis and visualization. She has also taught R and statistics in a graduate level course as a teacher assistant.
 
 * **Bruno Grande** is a PhD candidate working on cancer genomics in [Ryan Morin’s lab](https://morinlab.github.io/) at Simon Fraser University. He's an advocate for best practices in academic data science to overcome the reproducibility crisis affecting most of scholarly research. He dreams of publishing a Git repository that contains everything needed to reproduce every analysis from his PhD project with a single command. beRi plays an important role in making this dream possible. 
 
@@ -160,14 +160,14 @@ For the first year, the beRi suite of tools will be tested under the Linux OS. T
 The total costs of this project will be $22,700, split into the following items:
 
 - Travel costs for a project mid-completion meeting in a location where the team leaders can convene ($3000).
-- Compensation to team leaders/members and project dissemination including publication costs ($19,000).
+- Compensation to the project manager and lead maintainers as well as project dissemination including publication costs ($19,000).
 - Project management tools/subscriptions including Slack and Todoist and a `.com` or `.org` website via Namecheap ($700).
 
 # Dissemination
 
 This project will use a permissive open-source license (MIT). The development process will take place in the [*datasnakes*](https://github.com/datasnakes) organization on GitHub, and beRi and its suite of tools will be submitted to PyPi when it is completed. Discussion and contributions will be encouraged through GitHub issues and the R mailing lists.
 
-We will regularly post updates about this project on beRi's website and on the datasnakes' twitter account. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to provide articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress. A publication in scientific journal focused on software is foreseen as we complete beRi.
+We will regularly post updates about this project on beRi's [website](https://www.getberi.site/), on the datasnakes' [Twitter](https://twitter.com/datasnakes) account, and on the [r/rstats](https://www.reddit.com/r/rstats/) Reddit community. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to write articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress and prepare for a publication in a scientific journal as we complete beRi.
 
 # References
 

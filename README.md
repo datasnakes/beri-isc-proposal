@@ -159,7 +159,7 @@ Dissemination
 
 This project will use a permissive open-source license (MIT). The development process will take place in the [datasnakes](https://github.com/datasnakes) organization on GitHub, and beRi and its suite of tools will be submitted to PyPi when it is completed. Discussion and contributions will be encouraged through GitHub issues and the R mailing lists.
 
-We will regularly post updates about this project on beRi's website and on the datasnakes' twitter account. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to provide articles for the R Consortium blog at the start and end of the project so that the R community is aware of progress. A publication in scientific journal focused on software is foreseen as we complete beRi.
+We will regularly post updates about this project on beRi's website and on the datasnakes' twitter account. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to provide articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress. A publication in scientific journal focused on software is foreseen as we complete beRi.
 
 References
 ==========

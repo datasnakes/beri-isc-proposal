@@ -30,8 +30,7 @@ Bioinformatics professionals are incorporated into all of the top 3 categories. 
 
 Docker seems to be a holistic solution as containerization produces an exact replicate of your project's environment at the operating system level. The primary barrier for Docker is that there are a limited number of individuals in academia and the healthcare industry who can utilize this technology. RStudio's packrat solution is also an excellent tool for "containing" packages within a project. However, packrat builds for large projects can be computationally intensive, which results in slower build times. Anaconda's ecosystem for R is most similar to our approach and has also been the main subject of many questions about beRi after we proposed it informally in the rstats Reddit community:
 
-> "How does this differ from conda?"
-> "What are the benefits of using beRi over conda?"
+> "How does this differ from conda?" "What are the benefits of using beRi over conda?"
 
 A more detailed comparison of beRi and conda (along with other popular tools) can be seen in the table below. The main benefit and goal of beRi is to connect users directly to the R's most popular repositories (CRAN, Bioconductor, MRAN, GitHub, etc.) and provide a means for micromanaging the R environment in one tool set with an intuitive command line interface. While conda accomplishes some of the same goals, the CLI is inevitably attached to anaconda's repositories, which limits R users from easily integrating bleeding edge R packages or updates to them.
 
@@ -144,8 +143,8 @@ For the first year, the beRi suite of tools will be tested under the Linux OS. T
     -   Secondary Goal - Add beRi projects
 -   Development for other Linux Distributions - July 2019
 
-How Can The ISC Help
---------------------
+How Can the ISC Help
+====================
 
 The total costs of this project will be $22,700, split into the following items:
 
@@ -154,7 +153,7 @@ The total costs of this project will be $22,700, split into the following items:
 -   Project management tools/subscriptions including Slack and Todoist and a `.com` or `.org` website via Namecheap ($700).
 
 Dissemination
--------------
+=============
 
 This project will use a permissive open-source license (MIT). The development process will take place in the [*datasnakes*](https://github.com/datasnakes) organization on GitHub, and beRi and its suite of tools will be submitted to PyPi when it is completed. Discussion and contributions will be encouraged through GitHub issues and the R mailing lists.
 

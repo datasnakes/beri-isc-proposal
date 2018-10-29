@@ -30,7 +30,8 @@ Bioinformatics professionals are incorporated into all of the top 3 categories. 
 
 Docker seems to be a holistic solution as containerization produces an exact replicate of your project's environment at the operating system level. The primary barrier for Docker is that there are a limited number of individuals in academia and the healthcare industry who can utilize this technology. RStudio's packrat solution is also an excellent tool for "containing" packages within a project. However, packrat builds for large projects can be computationally intensive, which results in slower build times. Anaconda's ecosystem for R is most similar to our approach and has also been the main subject of many questions about beRi after we proposed it informally in the rstats Reddit community:
 
-> "How does this differ from conda?" "What are the benefits of using beRi over conda?"
+> "How does this differ from conda?"  
+> "What are the benefits of using beRi over conda?"
 
 A more detailed comparison of beRi and conda (along with other popular tools) can be seen in the table below. The main benefit and goal of beRi is to connect users directly to the R's most popular repositories (CRAN, Bioconductor, MRAN, GitHub, etc.) and provide a means for micromanaging the R environment in one tool set with an intuitive command line interface. While conda accomplishes some of the same goals, the CLI is inevitably attached to anaconda's repositories, which limits R users from easily integrating bleeding edge R packages or updates to them.
 
@@ -82,7 +83,7 @@ To begin, these packages will be built with Python for Linux systems starting wi
 Standalone CLI - renv
 ---------------------
 
-renv (short for R virtual environment) is a python-style virtual environment package for R and is the most developed of the three standalone tools. It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron). A directory will be utilized in the users home directory (~/.renv) as a repository for any environment created. The environments created with renv will not only be configurable with the normal .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (~/.renv/<env-name>/renv.yaml). This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install. The renv CLI will also contain a default yaml file for all newly created environments.
+renv (short for R virtual environment) is a python-style virtual environment package for R and is the most developed of the three standalone tools. It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron). A directory will be utilized in the users home directory (`~/.renv`) as a repository for any environment created. The environments created with renv will not only be configurable with the normal .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (`~/.renv/<env-name>/renv.yaml`). This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install. The renv CLI will also contain a default yaml file for all newly created environments.
 
 Standalone CLI - rinse
 ----------------------
@@ -157,7 +158,7 @@ Dissemination
 
 This project will use a permissive open-source license (MIT). The development process will take place in the [*datasnakes*](https://github.com/datasnakes) organization on GitHub, and beRi and its suite of tools will be submitted to PyPi when it is completed. Discussion and contributions will be encouraged through GitHub issues and the R mailing lists.
 
-We will regularly post updates about this project on beRi's website and on the datasnakes' twitter account. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to provide articles for the R Consortium blog at the start and end of the project so that the R community is aware of progress. A publication in scientific journal focused on software is foreseen as we complete beRi.
+We will regularly post updates about this project on beRi's website and on the datasnakes' twitter account. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to provide articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress. A publication in scientific journal focused on software is foreseen as we complete beRi.
 
 References
 ==========

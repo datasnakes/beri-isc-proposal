@@ -170,6 +170,3 @@ This project will use the MIT open-source license. The development process will 
 We will regularly post updates about this project on beRi's [website](https://www.getberi.site/), on the datasnakes' [Twitter](https://twitter.com/datasnakes) account, and on the [r/rstats](https://www.reddit.com/r/rstats/) Reddit community. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to write articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress and prepare for a publication in a scientific journal as we complete beRi.
 
 # References
-
-
-  

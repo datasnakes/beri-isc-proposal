@@ -3,10 +3,8 @@ title: "beRi Environments for R Installations"
 subtitle: "A suite of tools for managing R"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output: 
-  github_document:
-    pandoc_args: [ 
-      "--output=README.md" 
-    ] 
+  github_document: 
+    default
   pdf_document:
     toc: true
 linkcolor: blue 
@@ -101,7 +99,7 @@ To begin, these packages will be built with Python for Linux systems starting wi
 
 ## Standalone CLI - renv
 
-renv (short for R virtual environment) is a python-style virtual environment package for R and is the most developed of the three standalone tools.  It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron).  A directory will be utilized in the users home directory (~/.renv) as a repository for any environment created.  The environments created with renv will not only be configurable with the normal .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (~/.renv/<env-name>/renv.yaml).  This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install.  The renv CLI will also contain a default yaml file for all newly created environments.
+renv (short for R virtual environment) is a python-style virtual environment package for R and is the most developed of the three standalone tools.  It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron).  A directory will be utilized in the users home directory (`~/.renv`) as a repository for any environment created.  The environments created with renv will not only be configurable with the normal .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (`~/.renv/<env-name>/renv.yaml`).  This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install.  The renv CLI will also contain a default yaml file for all newly created environments.
 
 ## Standalone CLI - rinse
 
@@ -117,41 +115,62 @@ The primary and initial goal for the beRi suite of tools was to create standalon
 
 # Project Milestones
 
-The planning phase is a continuous effort.  In order to establish a higher level means of project management for the beRi suite of tools, we have decided to use several useful technologies.  GitHub will be the primary means of managing the project.  [ZenHub](https://www.zenhub.com/blog/how-to-use-github-agile-project-management/), which integrates with GitHub, provides agile project management that will help contributors understand the project from a hierarchical view.  Using ZenHub Milestones, Estimates, Epics, and Pipelines will help us generate timelines based on the category, difficulty level, quantity, stage of development, and the priority level of various tasks.  ToDoist will be used for general task management.  SLACK will be another interface for higher level discussion and communication between collaborators and users of the beRi Suite of Tools.
+The planning phase of this project requires a continuous effort.  In order to establish a higher level means of project management, we have decided to use several useful and well-integrated technologies.  GitHub will be the primary means of managing the project.  [ZenHub](https://www.zenhub.com/blog/how-to-use-github-agile-project-management/), which integrates with GitHub, provides agile project management that will help contributors understand the project from a hierarchical view.  Using ZenHub Milestones, Estimates, Epics, and Pipelines will help us generate timelines based on the category, difficulty level, quantity, stage of development, and the priority level of various tasks.  [Todoist](https://todoist.com/tour) will be used for general task management.  [Slack](https://slackdemo.com/?cvosrc=ppc.google.d_ppc_google_sitelink-slack-demo&cvo_creative=257483843273&utm_medium=ppc&utm_source=google&utm_campaign=d_ppc_google_sitelink-slack-demo&utm_term=slack&gclid=CjwKCAjwvNXeBRAjEiwAjqYhFklAL-7zPDBj92XOJ0hUoyRYdLL8cJIa_xaP8NtVsfb-cWKoU0IRbxoCNN8QAvD_BwE&gclsrc=aw.ds) will be another interface for higher level discussion and communication between collaborators and users of the beRi suite of tools.
 
 ## beRi for Linux (Version 1.0)
 
 For the first year, the beRi suite of tools will be tested under the Linux OS. The dates below represent estimated points of completion based on the pace we set at hackseq18.  More accurate dates will be possible after further analysis of our workload with ZenHub.
 
-* Development for Linux (Ubuntu LTS) - June 2019
+* Development for Linux specifically Ubuntu LTS - June 2019
   * renv - February 2019
     * Successfully Create Virtual Environments - Completed
     * Resolve minor R warnings - January 2019
-    * Code testing and refactoring - February 2019
+    * Code testing and linting - February 2019
+    * Create documentation using sphinx and tutorials - February 2019
+    * Publish package to PyPi - February 2019
   * rut - March 2019
-    * Package Manager - February 2019
+    * Extend to global package management - February 2019
     * Code testing and linting - March 2019
+    * Create documentation using sphinx and tutorials - March 2019
+    * Publish package to PyPi - March 2019    
     * Secondary Goal - Manage local CRAN-like repositories
-    * Secondary Goal - Manage packrat projects
+    * Secondary Goal - Extend rut for managing projects with packrat
   * rinse - April 2019
     * Manage the Installation of R from source - March 2019
-    * Add Microsoft R Open - April 2019
+    * Integrate Microsoft R Open - April 2019
     * Code testing and linting - May 2019
+    * Create documentation using sphinx and tutorials - May 2019
+    * Publish package to PyPi - May 2019
     * Secondary Goal - Reverse engineer pyenv
     * Consider other distributions of R
   * beRi - May 2019
-    * YAML config for renv, rut, rinse - April 2019
-    * YAML config for beRi - May 2019
-    * beRi file system - June 2019
+    * Incorporate YAML configuration for renv, rut, rinse - April 2019
+    * Begin writing manuscript for beRi - April 2019
+    * Incorporate YAML configuration for beRi - May 2019
+    * Create a beRi file system - May 2019
     * Code testing and linting - June 2019
+    * Creation of documentation and tutorials = June 2019
+    * Publish package to PyPi - June 2019
+    * Complete writing manuscript for beRi - July 2019
     * Secondary Goal - Add beRi projects
 * Development for other Linux Distributions - July 2019
 
 # How Can the ISC Help
 
+The total costs of this project will be $22,700, split into the following items:
+
+- Travel costs for a project mid-completion meeting in a location where the team leaders can convene ($3000).
+- Compensation to the project manager and lead maintainers as well as project dissemination including publication costs ($19,000).
+- Project management tools/subscriptions including Slack and Todoist and a `.com` or `.org` website via Namecheap ($700).
+
 # Dissemination
+
+This project will use the MIT open-source license. The development process will take place in the [*datasnakes*](https://github.com/datasnakes) organization on GitHub, and beRi and its suite of tools will be submitted to PyPi when it is completed. We will also encourage discussion and contributions through GitHub issues and the R mailing lists.
+
+We will regularly post updates about this project on beRi's [website](https://www.getberi.site/), on the datasnakes' [Twitter](https://twitter.com/datasnakes) account, and on the [r/rstats](https://www.reddit.com/r/rstats/) Reddit community. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to write articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress and prepare for a publication in a scientific journal as we complete beRi.
 
 # References
 
+[1] Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL
 
-  
+[2] Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL

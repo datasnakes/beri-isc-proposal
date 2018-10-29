@@ -2,6 +2,9 @@ beRi Environments for R Installations
 ================
 October 28, 2018
 
+**[Robert Gilmore](https://github.com/grabear)<sup>1</sup>, [Bruno Grande](https://github.com/edzer)<sup>2</sup>, [Shaurita Hutchins](https://github.com/sdhutchins)<sup>1</sup>, [Santina Lin](https://github.com/santina)<sup>3</sup>**
+.
+
 Preface
 =======
 
@@ -27,7 +30,8 @@ R is [rising in popularity](https://blog.revolutionanalytics.com/popularity/) in
 
 Docker seems to be a holistic solution as containerization produces an exact replicate of your project's environment at the operating system level. The primary barrier for Docker is that there are few people in the academia and the healthcare industry who are utilizing this technology. While packrat is an excellent tool for "containing" packages within a project, its builds for large projects can be computationally intensive and slow. Anaconda's ecosystem for R is most similar to our approach and has also been the main question about beRi from the rstats Reddit community:
 
-> "How does this differ from conda?" "What are the benefits of using beRi over conda?"
+> "How does this differ from conda?"  
+> "What are the benefits of using beRi over conda?"
 
 The main goal of beRi is to connect users directly to the R's most popular repositories (CRAN, Bioconductor, MRAN, GitHub, etc.) and provide a means for micromanaging the R environment in one tool set with an intuitive command line interface (CLI). While conda accomplishes some of the same goals, the CLI is attached to anaconda's repositories, which limits R users from easily integrating latest R packages or updates. beRi is not meant to replace existing tools but to incorporate a new one into the R ecosystem.
 
@@ -36,23 +40,23 @@ The Team
 
 [Team-beRi](https://github.com/orgs/datasnakes/teams/team-beri) is a group of individuals who are passionate about reproducibility in science but have experienced the limitations of existing tools. Bridging that gap was the motivation for prototyping beRi at [hackseq18](https://www.hackseq.com/) and winning the popular votes exhibits that there is a strong interest and need for this tool in at least the bioinformatics community.
 
-We are familiar with Python, R, and Bash from our daily work and plan to use these languages as the building blocks of the project. Some of us have software engineering experience to help with the development process. Since we will be both makers and users of this tool and are surrounded by fellow R users in science, we can continually improve beRi by adapting frequent feedback from ourselves and our community who will be the end users of beRi.
+We are familiar with Python, R, and Bash from our daily work and plan to use these languages as the building blocks of the project. Some of us have software engineering experience to help with the development process. Since we will be both makers and users of this tool and are surrounded by fellow R users in science, we can continually improve beRi by adapting frequent feedback from ourselves and our community, who will be the end users of beRi.
 
 Our team is divided into "tiers" of individuals based on experience level and willingness to contribute in the long term. We are using the terms "Project Manager", "Lead Maintainer", and "Contributor" to manage our responsibilities. The beRi team will develop under the [DataSnakes](https://github.com/datasnakes) organization on GitHub. All of the current contributors participated in developing beRi at the Hackseq 2018 bioinformatics hackathon in Vancouver, BC, Canada.
 
 Project Manager
 ---------------
 
-beRi was conceived by [**Rob Gilmore**](https://www.linkedin.com/in/robert-gilmore-7b451592). At hackseq18, his leadership skills and project management experience guided the team to success as the winners of the hackathon. Gilmore's skill sets came from his education in [Biomedical Engineering](https://www.abe.msstate.edu/academics/undergraduate/biomedical-engineering/curriculum/) at Mississippi State University, professional development at [Engineering Research and Development Center](https://www.erdc.usace.army.mil/) and his extensive Bioinformatics experience as a Researcher in the fields of Genetics and Psychiatry using non-human primate models. In his current position at the [University of Mississippi Medical Center](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html), he has utilized the [Mississippi Center for Computational Research's](https://mcsr.olemiss.edu/research/) HPC system to manage and develop large-scale bioinformatics pipelines using Linux, Windows, Python, R, and Bash.
+beRi was conceived by [**Rob Gilmore**](https://www.linkedin.com/in/robert-gilmore-7b451592). At hackseq18, his leadership skills and project management experience guided the team to success as the winners of the hackathon. Gilmore's skill sets come from his education in [Biomedical Engineering](https://www.abe.msstate.edu/academics/undergraduate/biomedical-engineering/curriculum/) at Mississippi State University, professional development at [Engineering Research and Development Center](https://www.erdc.usace.army.mil/), and his extensive Bioinformatics experience as a Researcher in the fields of Genetics and Psychiatry using non-human primate models. In his current position at the [University of Mississippi Medical Center](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html), he has utilized the [Mississippi Center for Computational Research's](https://mcsr.olemiss.edu/research/) HPC system to manage and develop large-scale bioinformatics pipelines using Linux, Windows, Python, R, and Bash.
 
 Lead Maintainers
 ----------------
 
--   **Shaurita D. Hutchins** is a Researcher II in the [Department of Psychiatry and Human Behavior's division of Neurobiology and Behavior Research](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html) at the University of Mississippi Medical Center. She received her Master of Science in Biological Sciences from Mississippi College. She is proficient with Python package development, R package development, web development (including shiny apps and flask apps), genomics pipeline development, data analysis using Python, and data visualization using R. She is the co-creator of [Datasnakes](https://www.datasnakes.org/), an open-source and open-science organization and acts as the maintainer for multiple repositories/projects in it.
+-   **Shaurita D. Hutchins** is a Researcher II at the [University of Mississippi Medical Center](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html). She received her Master of Science in Biological Sciences from Mississippi College. She is proficient with Python and R package development, web development (including shiny apps and flask apps), genomics pipeline development, data analysis using Python, and data visualization using R. She is the co-creator of [Datasnakes](https://www.datasnakes.org/), an open-source and open-science organization and acts as the maintainer for multiple repositories/projects in it.
 
 -   **Santina Lin** is a software engineer at Microsoft and works on maintaining the [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package as well as adding R and Python runtime to SQL server. She completed her master's degree in Bioinformatics at the University of British Columbia where she used R for data analysis and visualization and taught R and statistics in a graduate level course as a teacher assistant.
 
--   **Bruno Grande** is a Ph.D. candidate working on cancer genomics in [Ryan Morin’s lab](https://morinlab.github.io/) at Simon Fraser University. An advocate for best practices in data science, he was a regular instructor and organizer in [Software Carpentry](https://software-carpentry.org/) and [SciProg](http://sciprog.ca/) workshops to help people overcome the reproducibility crisis in research. He dreams of publishing a Git repository that can reproduce every analysis from his thesis with a single command. beRi plays an important role in making that achievement.
+-   **Bruno Grande** is a Ph.D. candidate working on cancer genomics in [Ryan Morin’s lab](https://morinlab.github.io/) at Simon Fraser University. An advocate for best practices in data science, he was a regular instructor and organizer in [Software Carpentry](https://software-carpentry.org/) and [SciProg](http://sciprog.ca/) workshops to help people overcome the reproducibility crisis in research. He dreams of publishing a Git repository that can reproduce every analysis from his thesis with a single command. beRi plays an important role in helping him achieve that goal.
 
 The Plan
 ========
@@ -84,42 +88,67 @@ The primary and initial goal for the beRi suite of tools was to create standalon
 Project Milestones
 ==================
 
-The planning phase is a continuous effort. GitHub will be the primary means of managing the project. [ZenHub](https://www.zenhub.com/blog/how-to-use-github-agile-project-management/), which integrates with GitHub, provides agile project management that will help contributors understand the project from a hierarchical view. Using ZenHub Milestones, Estimates, Epics, and Pipelines will help us generate timelines based on criteria such as difficulty, stage of development, and the priority level of various tasks. We will use ToDoist for general task management and Slack for higher level discussion among collaborators and users of beRi.
+The planning phase of this project requires a continuous effort. [ZenHub](https://www.zenhub.com/blog/how-to-use-github-agile-project-management/), which integrates with GitHub, provides agile project management that will help contributors understand the project from a hierarchical view. Using ZenHub Milestones, Estimates, Epics, and Pipelines will help us generate timelines based on criteria such as difficulty, stage of development, and the priority level of various tasks. [Todoist](https://todoist.com/tour) will be used for general task management. [Slack](https://slackdemo.com/?cvosrc=ppc.google.d_ppc_google_sitelink-slack-demo&cvo_creative=257483843273&utm_medium=ppc&utm_source=google&utm_campaign=d_ppc_google_sitelink-slack-demo&utm_term=slack&gclid=CjwKCAjwvNXeBRAjEiwAjqYhFklAL-7zPDBj92XOJ0hUoyRYdLL8cJIa_xaP8NtVsfb-cWKoU0IRbxoCNN8QAvD_BwE&gclsrc=aw.ds) will be another interface for higher level discussion and communication between collaborators and users of beRi.
+
 
 beRi for Linux (Version 1.0)
 ----------------------------
 
 The beRi suite of tools will first be tested under the Linux OS. The dates below represent estimated points of completion and maybe be modified after further analysis of our workload with ZenHub.
 
--   Development for Linux (Ubuntu LTS) - June 2019
+-   Development for Linux specifically Ubuntu LTS - June 2019
 -   renv - February 2019
-    -   Create virtual environments - Completed
+    -   Successfully Create Virtual Environments - Completed
     -   Resolve minor R warnings - January 2019
-    -   Code testing and refactoring - February 2019
+    -   Code testing and linting - February 2019
+    -   Create documentation using sphinx and tutorials - February 2019
+    -   Publish package to PyPi - February 2019
 -   rut - March 2019
-    -   Package Manager - February 2019
+    -   Extend to global package management - February 2019
     -   Code testing and linting - March 2019
+    -   Create documentation using sphinx and tutorials - March 2019
+    -   Publish package to PyPi - March 2019
     -   Secondary Goal - Manage local CRAN-like repositories
-    -   Secondary Goal - Manage packrat projects
+    -   Secondary Goal - Extend rut for managing projects with packrat
 -   rinse - April 2019
     -   Manage the Installation of R from source - March 2019
-    -   Add Microsoft R Open - April 2019
+    -   Integrate Microsoft R Open - April 2019
     -   Code testing and linting - May 2019
+    -   Create documentation using sphinx and tutorials - May 2019
+    -   Publish package to PyPi - May 2019
     -   Secondary Goal - Reverse engineer pyenv
     -   Consider other distributions of R
 -   beRi - May 2019
-    -   YAML config for renv, rut, rinse - April 2019
-    -   YAML config for beRi - May 2019
-    -   beRi file system - June 2019
+    -   Incorporate YAML configuration for renv, rut, rinse - April 2019
+    -   Begin writing manuscript for beRi - April 2019
+    -   Incorporate YAML configuration for beRi - May 2019
+    -   Create a beRi file system - May 2019
     -   Code testing and linting - June 2019
+    -   Creation of documentation and tutorials = June 2019
+    -   Publish package to PyPi - June 2019
+    -   Complete writing manuscript for beRi - July 2019
     -   Secondary Goal - Add beRi projects
 -   Development for other Linux Distributions - July 2019
 
-How Can the ISC Help
-====================
+How Can The ISC Help
+--------------------
+
+The total costs of this project will be $22,700, split into the following items:
+
+-   Travel costs for a project mid-completion meeting in a location where the team leaders can convene ($3000).
+-   Compensation to the project manager and lead maintainers as well as project dissemination including publication costs ($19,000).
+-   Project management tools/subscriptions including Slack and Todoist and a `.com` or `.org` website via Namecheap ($700).
 
 Dissemination
-=============
+-------------
+
+This project will use the MIT open-source license. The development process will take place in the [*datasnakes*](https://github.com/datasnakes) organization on GitHub, and beRi and its suite of tools will be submitted to PyPi when it is completed. We will also encourage discussion and contributions through GitHub issues and the R mailing lists.
+
+We will regularly post updates about this project on beRi's [website](https://www.getberi.site/), on the datasnakes' [Twitter](https://twitter.com/datasnakes) account, and on the [r/rstats](https://www.reddit.com/r/rstats/) Reddit community. We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us. Additionally, we intend to write articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress and prepare for a publication in a scientific journal as we complete beRi.
 
 References
 ==========
+
+[1] Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL
+
+[2] Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL

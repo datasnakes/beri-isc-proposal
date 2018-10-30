@@ -175,7 +175,7 @@ After Linux development is stable, a long-term goal is to provide for the instal
 ## Standalone CLI - rut
 
 rut, short for R utilities, will be an R package manager that will also be able to set up local CRAN-like repositories and manage custom R configuration files such as .Rprofile and .Renviron. 
-In its current iteration, rut can install packages from CRAN using R's remotes package. As the least developed package and most difficult to implement, rut will require more attention in order to develop it with best practices and integrate it with beRi. 
+In its current iteration, rut can install packages from CRAN using [r-lib](https://github.com/r-lib)'s [remotes](https://github.com/r-lib/remotes) package. As the least developed package and most difficult to implement, rut will require more attention in order to develop it with best practices and integrate it with beRi. 
 We have considered wrapping the R CMD INSTALL command, integrating a simpler version of [jetpack](https://github.com/ankane/jetpack), or utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
 
 ## Integrated CLI - beRi

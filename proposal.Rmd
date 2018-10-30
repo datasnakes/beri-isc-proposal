@@ -76,6 +76,10 @@ Anaconda's ecosystem for R is most similar to our approach, which has been the m
 
 ## Comparing beRi and Conda
 
+Without further ado, we propose [beRi](https://github.com/datasnakes/beRi), a toolset for managing R installations, R packages, and R environments.
+Following the [UNIX philosophy](https://en.wikipedia.org/wiki/Unix_philosophy), we plan to divide these three goals into three modular packages, namely rinse, rut, and renv, respectively.
+These packages will form the basis for beRi, which will leverage their functionality and provide a unified and user-friendly experience for configuring R environments.
+
 First of all, CRAN or Bioconductor R packages need to be adapted for
 Anaconda Cloud in order to be installable via conda.
 At the time of writing, one [list](https://docs.anaconda.com/anaconda/packages/r-language-pkg-docs/) of R packages on Anaconda Cloud counted 328 packages, which represents a small fraction of [CRAN](https://cran.rstudio.com/web/packages/index.html)'s 13,285 packages.

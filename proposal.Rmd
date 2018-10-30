@@ -4,7 +4,11 @@ date: "October 28th, 2018"
 bibliography: bibliography.bib
 csl: vancouver.csl
 linkcolor: blue
-output: pdf_document
+output:
+  github_document: default
+  pdf_document: default
+  html_document: default
+  word_document: default
 ---
 
 **[Robert Gilmore](https://github.com/grabear)^1^,
@@ -12,7 +16,7 @@ output: pdf_document
 [Shaurita Hutchins](https://github.com/sdhutchins)^1^,
 [Santina Lin](https://github.com/santina)^3^**
 
-^1^ University of Mississippi Medical Center, Jackson, MS, United States  
+^1^ Department of Psychiatry and Human Behavior, University of Mississippi Medical Center, Jackson, MS, United States  
 ^2^ Department of Molecular Biology and Biochemistry, Simon Fraser University, Burnaby, BC, Canada  
 ^3^ Microsoft Corporation, Redmond, WA, United States  
 
@@ -90,7 +94,8 @@ Thus, while conda is beginning to offer what we seek for R, it falls short due t
 
 ## Target audience
 
-R is a popular data science language, especially in the academic and healthcare sectors.[@Robinson2017-xv] Our target audience are those who can immediately benefit from better environment manangement in R, including computational researchers, data scientists, system administrators, and R package developers.
+R is a popular data science language, especially in the academic and healthcare sectors.[@Robinson2017-xv] 
+Our target audience is those who can immediately benefit from a better environment management in R. They include computational researchers, data scientists, system administrators, and R package developers.
 By design, beRi will also appeal to new R users who come from Python and/or have experience using the command line.
 We realize that a command-line tool is not accessible to most R users.
 That being said, we believe that R users who informed about software environments are much more likely to know how to use the command line.
@@ -111,7 +116,7 @@ Since we will be both makers and users of this tool and are surrounded by fellow
 
 Our team is divided into "tiers" of individuals based on experience level and willingness to contribute in the long term.
 We are using the terms "Project Manager", "Lead Maintainer", and "Contributor" to manage our responsibilities.
-The beRi team will develop under the [DataSnakes](https://github.com/datasnakes) organization on GitHub.
+The beRi team will develop under the [Datasnakes](https://github.com/datasnakes) organization on GitHub.
 All of the current contributors participated in developing beRi at the
 Hackseq 2018 bioinformatics hackathon in Vancouver, BC, Canada.
 
@@ -125,9 +130,8 @@ In his current position at the [University of Mississippi Medical Center](https:
 ## Lead Maintainers
 
 -   **Shaurita D. Hutchins** is a Researcher II at the [University of Mississippi Medical Center](https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html).
-    She received her Master of Science in Biological Sciences from Mississippi College.
-    She is proficient with Python and R package development, web development (including shiny apps and flask apps), genomics pipeline development, data analysis using Python, and data visualization using R.
-    She is the co-creator of [Datasnakes](https://www.datasnakes.org/), an open-source and open-science organization and acts as the maintainer for multiple repositories/projects in it.
+    She received her Master of Science in Biological Sciences from Mississippi College and is proficient with Python and R package development, web development,  genomics pipeline development, data analysis using Python, and data visualization using R.
+    She co-created the [Datasnakes](https://www.datasnakes.org/), an open-source organization and maintains several projects in it.
 
 -   **Santina Lin** is a software engineer at Microsoft and works on maintaining the [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package as well as adding R and Python runtime to SQL server.
     She completed her master's degree in Bioinformatics at the University of British Columbia where she used R for data analysis and visualization and taught R and statistics in a graduate level course as a teacher assistant.
@@ -151,28 +155,26 @@ These Python packages are currently being managed by [poetry](https://github.com
 
 ## Standalone CLI - renv
 
-renv, short for R virtual environment, is a Python-style virtual environment package for R.
-It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron).
-A directory will be utilized in the users home directory (`~/.renv`) as a repository for any environment created.
-The environments created with renv will not only be configurable with the .Rprofile/.Renviron files, but also a custom renv.yaml config file located in the root of the environment directory (`~/.renv/<env-name>/renv.yaml`).
-This file will also allow the user to set up default environment variables, CRAN mirrors, and to set default packages to install.
-The renv CLI will also contain a default yaml file for all newly created environments.
+renv, short for R virtual environment, is a Python-style virtual environment package for R. 
+It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron). 
+A directory will be utilized in the user's home directory (`~/.renv`) as a repository for any environment created. The environments created with renv will be configurable with the .Rprofile/.Renviron files as well as a custom renv.yaml config file located in the root of the environment directory (`~/.renv/<env-name>/renv.yaml`). 
+This file will allow the user to set up default environment variables, CRAN mirrors, and default packages to install. 
+The renv CLI will also contain a default yaml file for newly created environments.
+
 
 ## Standalone CLI - rinse
 
-rinse, short for R installer, is currently a simple installer for the latest version of R.
-In the future, we would like to implement features similar to [pyvenv](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md).
-This includes installing/uninstalling R from source, managing some of R's dependencies, and switching in between version of R.
-Installing
-Microsoft R-Open or [other R implementations](https://en.wikipedia.org/wiki/R_(programming_language)#Implementations) will also be considered.
+rinse, short for R installer, is currently a simple installer for the latest version of R. 
+In the future, we would like to implement features similar to [pyvenv](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md). 
+This includes installing/uninstalling R from source, managing some of R's dependencies, and switching between versions of R. 
+Installing Microsoft R-Open or [other R implementations](https://en.wikipedia.org/wiki/R_(programming_language)#Implementations) will also be considered. 
 After Linux development is stable, a long-term goal is to provide for the installation of Rtools on Windows.
 
 ## Standalone CLI - rut
 
-rut, short for R utilities, will be an R package manager that will also be able to set up local CRAN-like repositories and manage custom R configuration files such as .Rprofile and .Renviron.
-In its current iteration, rut can install packages from CRAN using R's remotes package.
-As the least developed package and likely the most difficult to implement, rut will require more attention in order to develop it with best practices and effectively integrate it with beRi.
-With regards to rut, we have discussed wrapping the R CMD INSTALL command, integrating a simpler version of [jetpack](https://github.com/ankane/jetpack), or utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
+rut, short for R utilities, will be an R package manager that will also be able to set up local CRAN-like repositories and manage custom R configuration files such as .Rprofile and .Renviron. 
+In its current iteration, rut can install packages from CRAN using [r-lib](https://github.com/r-lib)'s [remotes](https://github.com/r-lib/remotes) package. As the least developed package and most difficult to implement, rut will require more attention in order to develop it with best practices and integrate it with beRi. 
+We have considered wrapping the R CMD INSTALL command, integrating a simpler version of [jetpack](https://github.com/ankane/jetpack), or utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
 
 ## Integrated CLI - beRi
 
@@ -198,43 +200,34 @@ The dates below represent estimated points of completion and maybe be modified a
 -   renv - February 2019
     -   Successfully Create Virtual Environments - Completed
     -   Resolve minor R warnings - January 2019
-    -   Code testing and linting - February 2019
-    -   Create documentation using sphinx and tutorials - February 2019
-    -   Publish package to PyPi - February 2019
+    -   Code testing and linting; Create documentation using sphinx and tutorials; Publish package to PyPi - February 2019
 -   rut - March 2019
     -   Extend to global package management - February 2019
-    -   Code testing and linting - March 2019
-    -   Create documentation using sphinx and tutorials - March 2019
-    -   Publish package to PyPi - March 2019
+    -   Code testing and linting; Create documentation using sphinx and tutorials; Publish package to PyPi - March 2019
     -   Secondary Goal - Manage local CRAN-like repositories
     -   Secondary Goal - Extend rut for managing projects with packrat
 -   rinse - April 2019
     -   Manage the Installation of R from source - March 2019
     -   Integrate Microsoft R Open - April 2019
-    -   Code testing and linting - May 2019
-    -   Create documentation using sphinx and tutorials - May 2019
-    -   Publish package to PyPi - May 2019
+    -   Code testing and linting; Create documentation using sphinx and tutorials; Publish package to PyPi - May 2019
     -   Secondary Goal - Reverse engineer pyenv
     -   Consider other distributions of R
 -   beRi - May 2019
-    -   Incorporate YAML configuration for renv, rut, rinse - April 2019
-    -   Begin writing manuscript for beRi - April 2019
-    -   Incorporate YAML configuration for beRi - May 2019
-    -   Create a beRi file system - May 2019
-    -   Code testing and linting - June 2019
-    -   Creation of documentation and tutorials = June 2019
-    -   Publish package to PyPi - June 2019
+    -   Incorporate YAML configuration for renv, rut, rinse; Begin writing manuscript for beRi - April 2019
+    -   Incorporate YAML configuration for beRi; Create a beRi file system - May 2019
+    -   Code testing and linting; Create documentation using sphinx and tutorials; Publish package to PyPi - June 2019
     -   Complete writing manuscript for beRi - July 2019
     -   Secondary Goal - Add beRi projects
 -   Development for other Linux Distributions - July 2019
 
 ## How Can The ISC Help
 
-The total costs of this project will be $22,700, split into the following items:
+The total costs of this project will be $20,000 split into the following items:
 
--   Travel costs for a project mid-completion meeting in a location where the team leaders can convene ($3000).
--   Compensation to the project manager and lead maintainers as well as project dissemination including publication costs ($19,000).
--   Project management tools/subscriptions including Slack and Todoist and a `.com` or `.org` website via Namecheap ($700).
+-   Travel costs for a meeting in a location where the team leaders can convene and conference registration fees to present at a data science conference ($2,000).
+-   Compensation to the project manager and lead maintainers ($16,000)
+=   Project dissemination including publication costs ($1,000).
+-   Project management tools/subscriptions (Slack. Digital Ocean, and Todoist) and purchasing a domain name and associated services ($1,000).
 
 ## Dissemination
 

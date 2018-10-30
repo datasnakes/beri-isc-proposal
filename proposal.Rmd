@@ -96,18 +96,12 @@ That being said, we believe that R users who informed about software environment
 Unlike conda and Anaconda Cloud, we do not aim to implement a dependency resolution system, nor do we wish to replicate existing repositories.
 We plan on leveraging the existing facilities in R for installing packages from repositories such as CRAN and Bioconductor.
 
-# The Team
+# The Team - DataSnakes
 
-[Team-beRi](https://github.com/orgs/datasnakes/teams/team-beri) is a group of individuals who are passionate about reproducibility in research but have experienced the limitations of existing tools.
-Bridging that gap was the motivation for prototyping beRi at [hackseq18](https://www.hackseq.com/), a genomics hackathon in Vancouver, BC, Canada.
-Ultimately winning the popular vote at hackseq18 indicated a strong interest for this tool, at least in the bioinformatics community.
-The team presented here all participated in the beRi project at hackseq18.
-We will continue development under the [Datasnakes](https://github.com/datasnakes) organization on GitHub.
-
-We are proficient with Python, R, and Bash and plan to use these languages as the building blocks for the project.
-Some of us have software engineering experience to help with the development process.
-Since we will both develop and use this tool, we can continually improve beRi based on our experience.
-We also benefit from being surrounded by fellow R users in research, whose feedback can inform development and future direction.
+[Team-beRi](https://github.com/orgs/datasnakes/teams/team-beri) also known as the [DataSnakes](https://www.datasnakes.org/) is a group of individuals who are involved in various bioinformatics related research projects. 
+We also like creating open source tools for ourselves and others in the bioinformatics community.
+Our motivations for prototyping beRi are rooted in our own needs for tools that allow you to manipulate system environments for the R language. 
+At the [hackseq18](https://www.hackseq.com/) genomics hackathon in Vancouver, BC, Canada, beRi was developed and put to the test by the [DataSnakes](https://www.datasnakes.org/), where it ultimately won by popular vote.
 
 ## Project Manager
 

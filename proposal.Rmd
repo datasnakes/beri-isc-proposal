@@ -5,8 +5,8 @@ bibliography: bibliography.bib
 csl: vancouver.csl
 linkcolor: blue
 output:
-  word_document: default
   github_document: default
+  word_document: default
   html_document: default
   pdf_document: default
 ---
@@ -44,7 +44,7 @@ various R packages including [packrat](https://github.com/rstudio/packrat),
 add tremendous value to data analysis projects, they limit users to using an interactive R session (the R shell).  The
 proposed solution is the beRi Suite of Tools for managing R.  beRi is a recursive acronym, which stands for "beRi
 Environments for R Installations".  The tools created for beRi will aim to support reproducibility by allowing
-virtualization and standardization for data analysis, while also supporting R's native ecosystem by developing
+virtualization and standardization for data analysis, while also supporting R's native infrastructure by developing
 command-line tools present in other popular programming languages.
 
 # Scope

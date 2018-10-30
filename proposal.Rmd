@@ -5,10 +5,10 @@ bibliography: bibliography.bib
 csl: vancouver.csl
 linkcolor: blue
 output:
-  github_document: default
+  pdf_document: default
   word_document: default
   html_document: default
-  pdf_document: default
+  github_document: default
 ---
 
 **[Robert Gilmore](https://github.com/grabear)^1^,
@@ -60,10 +60,11 @@ However, our experience with them always left us wanting more, whether that was 
 The most popular options are Docker (rocker/containerit), packrat, and conda.
 Docker offers containerization that results in exact replicates of your environment including the operating system.
 The primary barriers for Docker are its complexity and its requirement for administrative privileges, which stunt its adoption in settings where time is limited for users and/or system administrators (*e.g.* academia).
-While packrat is an excellent tool for for maintaining isolated, portable and reproducible environments for each project, it becomes intractably slow when projects grow in complexity, measured here as the number of package dependencies.
+While packrat is an excellent tool for for maintaining isolated, portable and reproducible environments, larger projects tend to have more dependencies, which can increase the time in between packrat builds.
 Anaconda's ecosystem for R is most similar to our approach, which has been the main subject of debate in the [r/rstats](https://www.reddit.com/r/rstats/) Reddit and #rstats Twitter communities:
 
 > "How does this differ from conda?"  
+
 > "What are the benefits of using beRi over conda?"
 
 ## Comparing beRi and Conda

@@ -18,17 +18,25 @@ output: pdf_document
 
 # Preface
 
-Reproducibility is a cornerstone of scientific advancement.[@noauthor_undated-de]
-In computational research, we have the unique opportunity of achieving perfect reproducibility given the theoretical capability of computers to reproduce the same output given the same input and software.
-In practice, this goal is difficult to achieve because of a number of technical challenges.
-Here, we focus on the challenge of creating and managing environments for the R statistical programming language.
-We focus on R because of its popularity in data science, especially in the academic and healthcare contexts,[@Robinson2017-xv] and because we rely heavily on the language ourselves.
-Coming from Python, we found the toolset in R for managing environments to be lacking in comparison to Python offerings such as [virtualenv](https://virtualenv.pypa.io/en/latest/) and [conda](https://conda.io/docs/).
-Projects relying on containerization (*e.g.* Docker) such as [containerit](https://github.com/o2r-project/containerit) and [rocker](https://github.com/rocker-org/rocker) are powerful but ultimately fail to address the needs of those working at institutions where containerization technologies have not yet been adopted.
-Slow adoption can be partially attributed to potential [system vulnerabilities](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface) from requiring administrative privileges.
-Additional tools that do not rely on administrative privileges include R packages such as [packrat](https://github.com/rstudio/packrat), [checkpoint](https://github.com/RevolutionAnalytics/checkpoint), and [rbundler](https://cran.r-project.org/package=rbundler).
-However, these packages fail to provide conda's combination of flexibility, speed, and convenience from the command line.
-Our goal is to learn from conda's success and develop a set of modular packages that enable powerful environment management in R.
+Reproducibility is one of the cornerstones of science advancement according to the
+[NIH](https://www.nih.gov/research-training/rigor-reproducibility). Given R's increasing popularity in biotech and
+research as well as the aims of rOpenSci, there is a great need to provide frameworks or tools that seek to
+improve reproducibility and offer R users more comprehensive and easier options to achieve reproducibility.
+Currently, there are a number of R packages that seek to improve reproducibility. The
+[containerit](https://github.com/o2r-project/containerit) and [rocker](https://github.com/rocker-org/rocker)
+projects are examples that incorporate containerization via docker. However, many R users in biotech and research
+(specifically academic environments) don't typically have access to docker given it's a newer technology, it's not
+widely adopted by academic institutions due to potential system
+[vulnerabilities](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface), and it
+typically requires administrative privileges. In these types of situations,
+[conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is a preferred framework and by far
+one of the most popular options for reproducibility.  In other cases, users to different R packages including [packrat](https://github.com/rstudio/packrat),
+[checkpoint](https://github.com/RevolutionAnalytics/checkpoint)(MRAN),
+[miniCRAN](https://github.com/andrie/miniCRAN), [drat](https://github.com/eddelbuettel/drat),
+[workflowr](https://github.com/jdblischak/workflowr), and
+[rbundler](https://cran.r-project.org/web/packages/rbundler/index.html) for reproducibility.  While these packages
+have tremendous value to R users, they limit users to using an interactive R session (the R shell).
+
 
 # Scope
 

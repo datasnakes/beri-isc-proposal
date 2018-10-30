@@ -1,0 +1,28 @@
+---
+title: "comparison_table"
+author: "Rob Gilmore"
+date: "October 29, 2018"
+output: pdf_document
+classoption: landscape
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(magrittr)
+```
+
+## Table Comparing Reproducibility Tools
+
+```{r}
+dt1 <- read.csv("beRi - Comparing Tools - Publish1.csv")
+kableExtra::kable(dt1) %>% kableExtra::row_spec(0,bold=TRUE) %>% 
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+## Table Comparing Project Specifications
+
+```{r}
+dt2 <- read.csv("beRi - Comparing Tools - Publish2.csv")
+kableExtra::kable(dt2) %>% kableExtra::row_spec(0,bold=TRUE) %>% 
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```

@@ -18,25 +18,25 @@ output: pdf_document
 
 # Preface
 
-Reproducibility is one of the cornerstones of science advancement according to the
-[NIH](https://www.nih.gov/research-training/rigor-reproducibility). Given R's increasing popularity in biotech and
-research as well as the aims of rOpenSci, there is a great need to provide frameworks or tools that seek to
-improve reproducibility and offer R users more comprehensive and easier options to achieve reproducibility.
-Currently, there are a number of R packages that seek to improve reproducibility. The
-[containerit](https://github.com/o2r-project/containerit) and [rocker](https://github.com/rocker-org/rocker)
-projects are examples that incorporate containerization via docker. However, many R users in biotech and research
-(specifically academic environments) don't typically have access to docker given it's a newer technology, it's not
-widely adopted by academic institutions due to potential system
-[vulnerabilities](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface), and it
-typically requires administrative privileges. In these types of situations,
-[conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is a preferred framework and by far
-one of the most popular options for reproducibility.  In other cases, users to different R packages including [packrat](https://github.com/rstudio/packrat),
-[checkpoint](https://github.com/RevolutionAnalytics/checkpoint)(MRAN),
+Reproducibility is one of the cornerstones of scientific advancement according to the
+[NIH](https://www.nih.gov/research-training/rigor-reproducibility).  Organizations such as RStudio and rOpenSci
+promote these values, which makes R based data analysis increasingly more attractive.  This is especially true in
+academia and in the health care industry, where R's popularity has created a demand for easy to use tools that
+improve reproducible research. Currently, several technologies exist that seek to accomplish this
+goal.  The [containerit](https://github.com/o2r-project/containerit) and
+[rocker](https://github.com/rocker-org/rocker) projects are examples that incorporate containerization via docker.
+The Docker strategy is a way to perfectly reproduce a project on any system.  However, many R users in academia
+and in the health care industry don't typically have access to docker for several reasons, primarily because of
+system [vulnerabilities](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface), and
+because it typically requires administrative privileges. In these types of situations,
+[conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is the preferred framework
+and is by far one of the most popular options for reproducibility.  In other use cases, researchers also prefer
+various R packages including [packrat](https://github.com/rstudio/packrat),
+[checkpoint](https://github.com/RevolutionAnalytics/checkpoint) (MRAN),
 [miniCRAN](https://github.com/andrie/miniCRAN), [drat](https://github.com/eddelbuettel/drat),
 [workflowr](https://github.com/jdblischak/workflowr), and
-[rbundler](https://cran.r-project.org/web/packages/rbundler/index.html) for reproducibility.  While these packages
-have tremendous value to R users, they limit users to using an interactive R session (the R shell).
-
+[drake](https://github.com/ropensci/drake).  While these packages
+add tremendous value to data analysis projects, they limit users to using an interactive R session (the R shell).
 
 # Scope
 

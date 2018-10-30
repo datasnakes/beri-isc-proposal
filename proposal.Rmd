@@ -5,10 +5,10 @@ bibliography: bibliography.bib
 csl: vancouver.csl
 linkcolor: blue
 output:
-  pdf_document: default
+  github_document: default
   word_document: default
   html_document: default
-  github_document: default
+  pdf_document: default
 ---
 
 **[Robert Gilmore](https://github.com/grabear)^1^,

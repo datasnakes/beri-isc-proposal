@@ -17,3 +17,7 @@ You must first install pandoc and pandoc-citeproc.
 ```console
 pandoc --filter pandoc-citeproc proposal.md -s -o proposal.pdf
 ```
+
+## View the proposal
+
+View the [markdown version](https://github.com/datasnakes/beri-isc-proposal/blob/master/proposal.md) of our proposal.

@@ -69,10 +69,12 @@ The most popular options are Docker (rocker/containerit), packrat, and conda.
 Docker offers containerization that results in exact replicates of your environment including the operating system.
 The primary barriers for Docker are its complexity and its requirement for administrative privileges, which stunt its adoption in settings where time is limited for users and/or system administrators (*e.g.* academia).
 While packrat is an excellent tool for for maintaining isolated, portable and reproducible environments for each project, it becomes intractably slow when projects grow in complexity, measured here as the number of package dependencies.
-In response to the idea of beRi, the [r/rstats](https://www.reddit.com/r/rstats/) Reddit and #rstats Twitter communities rightfully asked how it differed from conda:
+Anaconda's ecosystem for R is most similar to our approach, which has been the main subject of debate in the [r/rstats](https://www.reddit.com/r/rstats/) Reddit and #rstats Twitter communities:
 
 > "How does this differ from conda?"  
 > "What are the benefits of using beRi over conda?"
+
+## Comparing beRi and Conda
 
 First of all, CRAN or Bioconductor R packages need to be adapted for
 Anaconda Cloud in order to be installable via conda.

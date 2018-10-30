@@ -226,9 +226,10 @@ The dates below represent estimated points of completion and maybe be modified a
 
 The total costs of this project will be $20,000 split into the following items:
 
--   Travel costs and conference registration fee for a meeting in a location where the team leaders can convene and present at a data science conference ($2000).
--   Compensation to the project manager and lead maintainers as well as project dissemination including publication costs ($17,000).
--   Project management tools/subscriptions including Slack. Digital Ocean, and Todoist and a `.com` or `.org` website via Namecheap ($100).
+-   Travel costs for a meeting in a location where the team leaders can convene and conference registration fees to present at a data science conference ($2,000).
+-   Compensation to the project manager and lead maintainers ($16,000)
+=   Project dissemination including publication costs ($1,000).
+-   Project management tools/subscriptions (Slack. Digital Ocean, and Todoist) and purchasing a domain name and associated services ($1,000).
 
 ## Dissemination
 

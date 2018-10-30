@@ -49,18 +49,17 @@ offers access to a standard or custom package repository.  For example, Python h
 [npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has the
 [gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  R has
 [CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), which are package
-repositories, but R doesn't have an easy (as compared to pip or npm) way to install packages globally or locally
-via the command-line. Improving the management of R package installation and removal could boost reproducibility
-for projects and boost the user base by offering an option specifically for the bioinformatics community.
+repositories, but, compared to pip and nmp, R doesn't have a way to install packages globally or locally
+via the command-line.
 
-In addition to package management, it is often important for R users to install R from source.  HPC systems
-generally need R installed from source because system admins desire specific global configurations.   More
-specifically, HPC system users need to install R in locally order to utilize a specific version of R (or a package
-that depends on a specific R version) or to have a custom configuration of R in their environment.  Other
-programming languages including Python ([pyenv](https://github.com/pyenv/pyenv)) and Ruby
-([rbenv](https://github.com/rbenv/rbenv) and [ruby-build](https://github.com/jdblischak/workflowr)) have
-third-party interfaces that manage the installation and management of various versions of the language which aids
-in the reproducibility of an environment for project as well as localization of a project's dependencies.
+In addition to package management, it is often important for researchers to install various software in their
+local environment.  HPC systems for instance are more likely to not have a required piece of software, to have
+fewer choices for different versions of software, or to have the software configured inappropriately for the data
+analysis.  This is especially true for programming languages that frequently receive updates to their source code.
+Programming languages such as Python and Ruby have third-party interfaces
+([pyenv](https://github.com/pyenv/pyenv), [rbenv](https://github.com/rbenv/rbenv), and
+[ruby-build](https://github.com/jdblischak/workflowr)) that manage the installation and management of various
+versions of the language.  While [conda](https://conda.io/docs/) can manage R installations, it cannot manage the various version of the language it installs.
 
 ## Comparing R Workflows
 

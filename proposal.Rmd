@@ -97,7 +97,7 @@ Thus, while conda is beginning to offer what we seek for R, it falls short due t
 ## Target audience
 
 R is a popular data science language, especially in the academic and healthcare sectors.[@Robinson2017-xv] 
-Our target audience are those who can immediately benefit from better environment manangement in R, including computational researchers, data scientists, system administrators, and R package developers.
+Our target audience is those who can immediately benefit from a better environment management in R. They include computational researchers, data scientists, system administrators, and R package developers.
 By design, beRi will also appeal to new R users who come from Python and/or have experience using the command line.
 We realize that a command-line tool is not accessible to most R users.
 That being said, we believe that R users who informed about software environments are much more likely to know how to use the command line.

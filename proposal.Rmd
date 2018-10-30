@@ -42,15 +42,24 @@ have tremendous value to R users, they limit users to using an interactive R ses
 
 ## Comparing Programming Languages
 
-Most popular programming languages in computational research have a command-line package managers to access standard or custom repositories.
-For instance, Python has [pip](https://pypi.org/project/pip/) for [PyPi](https://pypi.org/) or [conda](https://conda.io/docs/) for [Anaconda Cloud](https://anaconda.org/), JavaScript has [npm-client](https://github.com/npm/cli) for [npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has [gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).
-R offers comprehensive package repositories such as [CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/) but no tool to manage packages from the command line.
-Additionally, local software environments have become increasingly popular for creating isolated or project-specific dependency installations without requiring elevated privileges.
-Examples in other languages are [virtualenv](https://virtualenv.pypa.io/en/latest/), [pyenv](https://github.com/pyenv/pyenv), and [conda](https://conda.io/docs/) in Python and [rbenv](https://github.com/rbenv/rbenv) in Ruby.
-Importantly, isolated software environments greatly facilitate reproducibility in research by enabling the straightforward management and dissemination of project dependencies.
-With these ideas in mind, we propose [beRi](https://github.com/datasnakes/beRi), a toolset for managing R installations, R packages, and R environments.
-Following the [UNIX philosophy](https://en.wikipedia.org/wiki/Unix_philosophy), we plan to divide these three goals into three modular packages, namely rinse, rut, and renv, respectively.
-These packages will form the basis for beRi, which will leverage their functionality and provide a unified and user-friendly experience for configuring R environments.
+Many of the popular programming languages in the bioinformatics community have a command-line package manager that
+offers access to a standard or customizable package repository.  Python has [pip](https://pypi.org/project/pip/)
+and [PyPi](https://pypi.org/), JavaScript has the [npm-client](https://github.com/npm/cli) and
+[npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has the
+[gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  R has
+[CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), which are package
+repositories, but R doesn't have an easy (as compared to pip or npm) way to install packages globally or locally
+via the command-line. Improving the management of R package installation and removal could boost reproducibility
+for projects and boost the user base by offering an option specifically for the bioinformatics community.
+
+In addition to package management, it is often important for R users to install R from source.  HPC systems
+generally need R installed from source because system admins desire specific global configurations.   More
+specifically, HPC system users need to install R in locally order to utilize a specific version of R (or a package
+that depends on a specific R version) or to have a custom configuration of R in their environment.  Other
+programming languages including Python ([pyenv](https://github.com/pyenv/pyenv)) and Ruby
+([rbenv](https://github.com/rbenv/rbenv) and [ruby-build](https://github.com/jdblischak/workflowr)) have
+third-party interfaces that manage the installation and management of various versions of the language which aids
+in the reproducibility of an environment for project as well as localization of a project's dependencies.
 
 ## Comparing R Workflows
 

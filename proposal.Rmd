@@ -5,8 +5,8 @@ bibliography: bibliography.bib
 csl: vancouver.csl
 linkcolor: blue
 output:
-  github_document: default
   pdf_document: default
+  github_document: default
   html_document: default
   word_document: default
 ---
@@ -32,7 +32,8 @@ goal.  The [containerit](https://github.com/o2r-project/containerit) and
 The Docker strategy is a way to perfectly reproduce a project on any system.  However, many R users in academia
 and in the health care industry usually don't have access to docker, primarily because of
 system [vulnerabilities](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface), and
-because it typically requires administrative privileges. In these types of situations,
+because it typically requires administrative privileges.  These issues are compounded in situations where system
+administrators are either inexperienced, overworked, or both.  In these types of situations,
 [conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is the preferred framework
 and is by far one of the most popular options for reproducibility.  In other use cases, researchers also prefer
 various R packages including [packrat](https://github.com/rstudio/packrat),

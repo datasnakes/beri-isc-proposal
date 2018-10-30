@@ -168,7 +168,7 @@ The renv CLI will also contain a default yaml file for newly created environment
 
 rinse, short for R installer, is currently a simple installer for the latest version of R. 
 In the future, we would like to implement features similar to [pyvenv](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md). 
-This includes installing/uninstalling R from source, managing some of R's dependencies, and switching in between version of R. 
+This includes installing/uninstalling R from source, managing some of R's dependencies, and switching between versions of R. 
 Installing Microsoft R-Open or [other R implementations](https://en.wikipedia.org/wiki/R_(programming_language)#Implementations) will also be considered. 
 After Linux development is stable, a long-term goal is to provide for the installation of Rtools on Windows.
 

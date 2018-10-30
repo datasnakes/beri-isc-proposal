@@ -42,9 +42,10 @@ add tremendous value to data analysis projects, they limit users to using an int
 
 ## Comparing Programming Languages
 
-Many of the popular programming languages in the bioinformatics community have a command-line package manager that
-offers access to a standard or customizable package repository.  Python has [pip](https://pypi.org/project/pip/)
-and [PyPi](https://pypi.org/), JavaScript has the [npm-client](https://github.com/npm/cli) and
+Many popular programming languages in the bioinformatics community have a command-line package manager that
+offers access to a standard or custom package repository.  For example, Python has
+[pip](https://pypi.org/project/pip/) for [PyPi](https://pypi.org/) or [conda](https://conda.io/docs/) for
+[Anaconda Cloud](https://anaconda.org/), JavaScript has the [npm-client](https://github.com/npm/cli) for the
 [npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has the
 [gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  R has
 [CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), which are package

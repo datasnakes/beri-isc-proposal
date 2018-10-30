@@ -96,7 +96,8 @@ Thus, while conda is beginning to offer what we seek for R, it falls short due t
 
 ## Target audience
 
-R is a popular data science language, especially in the academic and healthcare sectors.[@Robinson2017-xv] Our target audience are those who can immediately benefit from better environment manangement in R, including computational researchers, data scientists, system administrators, and R package developers.
+R is a popular data science language, especially in the academic and healthcare sectors.[@Robinson2017-xv] 
+Our target audience are those who can immediately benefit from better environment manangement in R, including computational researchers, data scientists, system administrators, and R package developers.
 By design, beRi will also appeal to new R users who come from Python and/or have experience using the command line.
 We realize that a command-line tool is not accessible to most R users.
 That being said, we believe that R users who informed about software environments are much more likely to know how to use the command line.
@@ -156,16 +157,26 @@ These Python packages are currently being managed by [poetry](https://github.com
 
 ## Standalone CLI - renv
 
-renv, short for R virtual environment, is a Python-style virtual environment package for R. It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron). A directory will be utilized in the user's home directory (`~/.renv`) as a repository for any environment created. The environments created with renv will be configurable with the .Rprofile/.Renviron files as well as a custom renv.yaml config file located in the root of the environment directory (`~/.renv/<env-name>/renv.yaml`). This file will allow the user to set up default environment variables, CRAN mirrors, and default packages to install. The renv CLI will also contain a default yaml file for newly created environments.
+renv, short for R virtual environment, is a Python-style virtual environment package for R. 
+It will use Python's venv [EnvBuilder](https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17) module along with [cookiecutter](https://github.com/audreyr/cookiecutter) in order to deploy the proper shell scripts (activate) and R configuration files (.Rprofile, .Renviron). 
+A directory will be utilized in the user's home directory (`~/.renv`) as a repository for any environment created. The environments created with renv will be configurable with the .Rprofile/.Renviron files as well as a custom renv.yaml config file located in the root of the environment directory (`~/.renv/<env-name>/renv.yaml`). 
+This file will allow the user to set up default environment variables, CRAN mirrors, and default packages to install. 
+The renv CLI will also contain a default yaml file for newly created environments.
 
 
 ## Standalone CLI - rinse
 
-rinse, short for R installer, is currently a simple installer for the latest version of R. In the future, we would like to implement features similar to [pyvenv](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md). This includes installing/uninstalling R from source, managing some of R's dependencies, and switching in between version of R. Installing Microsoft R-Open or [other R implementations](https://en.wikipedia.org/wiki/R_(programming_language)#Implementations) will also be considered. After Linux development is stable, a long-term goal is to provide for the installation of Rtools on Windows.
+rinse, short for R installer, is currently a simple installer for the latest version of R. 
+In the future, we would like to implement features similar to [pyvenv](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md). 
+This includes installing/uninstalling R from source, managing some of R's dependencies, and switching in between version of R. 
+Installing Microsoft R-Open or [other R implementations](https://en.wikipedia.org/wiki/R_(programming_language)#Implementations) will also be considered. 
+After Linux development is stable, a long-term goal is to provide for the installation of Rtools on Windows.
 
 ## Standalone CLI - rut
 
-rut, short for R utilities, will be an R package manager that will also be able to set up local CRAN-like repositories and manage custom R configuration files such as .Rprofile and .Renviron. In its current iteration, rut can install packages from CRAN using R's remotes package. As the least developed package and most difficult to implement, rut will require more attention in order to develop it with best practices and integrate it with beRi. We have considered wrapping the R CMD INSTALL command, integrating a simpler version of [jetpack](https://github.com/ankane/jetpack), or utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
+rut, short for R utilities, will be an R package manager that will also be able to set up local CRAN-like repositories and manage custom R configuration files such as .Rprofile and .Renviron. 
+In its current iteration, rut can install packages from CRAN using R's remotes package. As the least developed package and most difficult to implement, rut will require more attention in order to develop it with best practices and integrate it with beRi. 
+We have considered wrapping the R CMD INSTALL command, integrating a simpler version of [jetpack](https://github.com/ankane/jetpack), or utilizing [rpy2](https://rpy2.readthedocs.io/en/version_2.8.x/) for getting interpreter specific information.
 
 ## Integrated CLI - beRi
 

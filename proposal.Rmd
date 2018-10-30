@@ -170,9 +170,6 @@ While the development of beRi will affect some of the changes we make to the sta
 
 # Project Milestones
 
-The planning phase of this project requires a continuous effort. [ZenHub](https://www.zenhub.com/blog/how-to-use-github-agile-project-management/), which integrates with GitHub, provides agile project management that will help contributors understand the project from a hierarchical view.
-Using ZenHub Milestones, Estimates, Epics, and Pipelines will help us generate timelines based on criteria such as difficulty, stage of development, and the priority level of various tasks. [Todoist](https://todoist.com/tour) will be used for general task management. [Slack](https://slackdemo.com/?cvosrc=ppc.google.d_ppc_google_sitelink-slack-demo&cvo_creative=257483843273&utm_medium=ppc&utm_source=google&utm_campaign=d_ppc_google_sitelink-slack-demo&utm_term=slack&gclid=CjwKCAjwvNXeBRAjEiwAjqYhFklAL-7zPDBj92XOJ0hUoyRYdLL8cJIa_xaP8NtVsfb-cWKoU0IRbxoCNN8QAvD_BwE&gclsrc=aw.ds) will be another interface for higher level discussion and communication between collaborators and users of beRi.
-
 ## beRi for Linux (Version 1.0)
 
 The beRi suite of tools will first be tested under the Linux OS.
@@ -202,14 +199,20 @@ The dates below represent estimated points of completion and maybe be modified a
     -   Secondary Goal - Add beRi projects
 -   Development for other Linux Distributions - July 2019
 
-## How Can The ISC Help
+# How Can The ISC Help
 
 The total costs of this project will be $20,000 split into the following items:
 
--   Travel costs for a meeting in a location where the team leaders can convene and conference registration fees to present at a data science conference ($2,000).
--   Compensation to the project manager and lead maintainers ($16,000)
-=   Project dissemination including publication costs ($1,000).
--   Project management tools/subscriptions (Slack. Digital Ocean, and Todoist) and purchasing a domain name and associated services ($1,000).
+| Item          | Purpose                                                              | Cost    |
+|---------------|----------------------------------------------------------------------|---------|
+| Development   | To support development time ($4,000/contributor)                     | $16,000 |
+| Travel        | To cover travel costs for a conference presentation and team meeting | $2,000  |
+| Dissemination | To cover conference registration and publication costs               | $1,000  |
+| Tooling       | To cover project management tools, including Slack and Digital Ocean | $500   |
+
+## Travel
+
+Add more details.
 
 ## Dissemination
 
@@ -220,5 +223,11 @@ We will also encourage discussion and contributions through GitHub issues and th
 We will regularly post updates about this project on beRi's [website](https://www.getberi.site/), on the datasnakes' [Twitter](https://twitter.com/datasnakes) account, and on the [r/rstats](https://www.reddit.com/r/rstats/) Reddit community.
 We have created a [gitter](https://gitter.im/CRANbeRi/Lobby) chat room to allow other developers to interact with us and collaborate with us.
 Additionally, we intend to write articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress and prepare for a publication in a scientific journal as we complete beRi.
+
+## Tooling
+
+The planning phase of this project requires a continuous effort. [ZenHub](https://www.zenhub.com/blog/how-to-use-github-agile-project-management/), which integrates with GitHub, provides agile project management that will help contributors understand the project from a hierarchical view.
+Using ZenHub Milestones, Estimates, Epics, and Pipelines will help us generate timelines based on criteria such as difficulty, stage of development, and the priority level of various tasks. 
+[Todoist](https://todoist.com/tour) will be used for general task management. [Slack](https://slackdemo.com/) will be another interface for higher level discussion and communication between collaborators and users of beRi.
 
 # References

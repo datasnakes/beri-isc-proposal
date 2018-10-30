@@ -26,7 +26,7 @@ improve reproducible research. Currently, several technologies exist that seek t
 goal.  The [containerit](https://github.com/o2r-project/containerit) and
 [rocker](https://github.com/rocker-org/rocker) projects are examples that incorporate containerization via docker.
 The Docker strategy is a way to perfectly reproduce a project on any system.  However, many R users in academia
-and in the health care industry don't typically have access to docker for several reasons, primarily because of
+and in the health care industry usually don't have access to docker, primarily because of
 system [vulnerabilities](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface), and
 because it typically requires administrative privileges. In these types of situations,
 [conda](https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/) is the preferred framework
@@ -43,23 +43,21 @@ add tremendous value to data analysis projects, they limit users to using an int
 ## Comparing Programming Languages
 
 Many popular programming languages in the bioinformatics community have a command-line package manager that
-offers access to a standard or custom package repository.  For example, Python has
-[pip](https://pypi.org/project/pip/) for [PyPi](https://pypi.org/) or [conda](https://conda.io/docs/) for
-[Anaconda Cloud](https://anaconda.org/), JavaScript has the [npm-client](https://github.com/npm/cli) for the
-[npm-registry](https://docs.npmjs.com/misc/registry), and Ruby has the
-[gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  R has
-[CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), which are package
-repositories, but, compared to pip and nmp, R doesn't have a way to install packages globally or locally
-via the command-line.
+offers access to a standard or custom package repository.  Python for example has
+[pip](https://pypi.org/project/pip/) for [PyPi](https://pypi.org/), and [conda](https://conda.io/docs/) for
+[Anaconda Cloud](https://anaconda.org/).  JavaScript has the [npm-client](https://github.com/npm/cli) for the
+[npm-registry](https://docs.npmjs.com/misc/registry).  And Ruby has the
+[gem-client](https://github.com/rubygems/rubygems) for [RubyGems.org](https://rubygems.org/).  While R has
+[CRAN](https://cran.r-project.org/) and [Bioconductor](https://www.bioconductor.org/), it doesn't have a way to install packages globally or locally via the command-line.
 
 In addition to package management, it is often important for researchers to install various software in their
 local environment.  HPC systems for instance are more likely to not have a required piece of software, to have
-fewer choices for different versions of software, or to have the software configured inappropriately for the data
-analysis.  This is especially true for programming languages that frequently receive updates to their source code.
-Programming languages such as Python and Ruby have third-party interfaces
+fewer choices for different versions of software, or to have the software configured inappropriately for the
+user's needs.  This is especially true for programming languages that frequently receive updates to their source
+code.  To alleviate this Python and Ruby have third-party interfaces
 ([pyenv](https://github.com/pyenv/pyenv), [rbenv](https://github.com/rbenv/rbenv), and
 [ruby-build](https://github.com/jdblischak/workflowr)) that manage the installation and management of various
-versions of the language.  While [conda](https://conda.io/docs/) can manage R installations, it cannot manage the various version of the language it installs.
+versions of the programming language.  While [conda](https://conda.io/docs/) can manage R installations, it cannot manage the various version of the language it installs.
 
 ## Comparing R Workflows
 

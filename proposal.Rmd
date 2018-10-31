@@ -86,7 +86,7 @@ We plan on leveraging the existing facilities in R for installing packages from 
 
 # The Team - Datasnakes
 
-[Team-beRi](https://github.com/orgs/datasnakes/teams/team-beri) also known as the [Datasnakes](https://www.datasnakes.org/) is a group of individuals who are involved in various bioinformatics related research projects. 
+[Team-beRi](https://github.com/orgs/datasnakes/teams/team-beri), also known as the [Datasnakes](https://www.datasnakes.org/), is a group of individuals who are involved in various bioinformatics related research projects. 
 We also like creating open source tools for ourselves and others in the bioinformatics community.
 Our motivations for prototyping beRi are rooted in our own needs for tools that allow you to manipulate system environments for the R language. 
 At the [hackseq18](https://www.hackseq.com/) genomics hackathon in Vancouver, BC, Canada, beRi was developed and put to the test by the Datasnakes, where it ultimately won by popular vote.
@@ -151,7 +151,7 @@ We have considered wrapping the R CMD INSTALL command, integrating a simpler ver
 
 The primary and initial goal for the beRi suite of tools was to create standalone packages.
 We looked to other programming languages for inspiration and R manuals and various documentations to keep the R ecosystem and R community in mind.
-The integration of the three tools under the beRi CLI will help us develop a custom project workflow with one cohesive interface.
+The main goals for the beRi CLI include a portable project workflow, an integrated filesystem, and a plugin/extension manager for implementing other tools.
 Once the standalone tools are functional, we will develop an analogous YAML configuration workflow for each package so that we can configure our environment with one YAML file and develop a beRi file-system.
 The `~/.beRi` folder, for instance, will contain any renv environments, R installations, CRAN-like repositories, and `.libPaths()` associated with beRi processes by default.
 While the development of beRi will affect some of the changes we make to the standalone CLI, we will never limit renv, rinse, or rut by linking them to each other or to beRi.

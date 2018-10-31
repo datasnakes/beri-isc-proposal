@@ -114,7 +114,7 @@ In his current position at the [University of Mississippi Medical Center](https:
 
 # The Plan
 
-beRi is a suite of Python packages composed of the following components: (1) [renv](https://github.com/datasnakes/renv), a virtual environment manager for R; [rinse](https://github.com/datasnakes/rinse), an R installation and R version manager; and (3) [rut](https://github.com/datasnakes/rut), an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories.
+beRi is a suite of Python packages composed of the following components: (1) [renv](https://github.com/datasnakes/renv), a virtual environment manager for R; (2) [rinse](https://github.com/datasnakes/rinse), an R installation and R version manager; and (3) [rut](https://github.com/datasnakes/rut), an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories.
 These packages will be developed in separate repositories as standalone command-line interfaces (CLIs).
 [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository but will depend on the other three packages.
 

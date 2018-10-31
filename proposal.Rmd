@@ -80,8 +80,8 @@ That being said, we believe that R users who informed about software environment
 
 ## What beRi is not
 
-Unlike conda and Anaconda Cloud, we do not aim to implement a dependency resolution system, nor do we wish to replicate existing repositories.
-We plan on leveraging the existing facilities in R for installing packages from repositories such as CRAN and Bioconductor.
+Unlike conda and Anaconda Cloud, we do not aim to implement a dependency resolution system, nor do we wish to maintain a package repository.
+We plan on leveraging the existing facilities in R for installing packages from existing R repositories.
 
 
 # The Team - Datasnakes

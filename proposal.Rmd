@@ -12,8 +12,8 @@ output:
 ---
 
 **[Robert Gilmore](https://github.com/grabear)^1^,
-[Bruno Grande](https://github.com/edzer)^2^,
 [Shaurita Hutchins](https://github.com/sdhutchins)^1^,
+[Bruno Grande](https://github.com/edzer)^2^,
 [Santina Lin](https://github.com/santina)^3^**
 
 ^1^ Department of Psychiatry and Human Behavior, University of Mississippi Medical Center, Jackson, MS, United States  
@@ -80,13 +80,13 @@ That being said, we believe that R users who informed about software environment
 
 ## What beRi is not
 
-Unlike conda and Anaconda Cloud, we do not aim to implement a dependency resolution system, nor do we wish to replicate existing repositories.
-We plan on leveraging the existing facilities in R for installing packages from repositories such as CRAN and Bioconductor.
+Unlike conda and Anaconda Cloud, we do not aim to implement a dependency resolution system, nor do we wish to maintain a package repository.
+We plan on leveraging the existing facilities in R for installing packages from existing R repositories.
 
 
 # The Team - Datasnakes
 
-[Team-beRi](https://github.com/orgs/datasnakes/teams/team-beri) also known as the [Datasnakes](https://www.datasnakes.org/) is a group of individuals who are involved in various bioinformatics related research projects. 
+[Team-beRi](https://github.com/orgs/datasnakes/teams/team-beri), also known as the [Datasnakes](https://www.datasnakes.org/), is a group of individuals who are involved in various bioinformatics related research projects. 
 We also like creating open source tools for ourselves and others in the bioinformatics community.
 Our motivations for prototyping beRi are rooted in our own needs for tools that allow you to manipulate system environments for the R language. 
 At the [hackseq18](https://www.hackseq.com/) genomics hackathon in Vancouver, BC, Canada, beRi was developed and put to the test by the Datasnakes, where it ultimately won by popular vote.
@@ -104,17 +104,17 @@ In his current position at the [University of Mississippi Medical Center](https:
  She received her Master of Science in Biological Sciences from Mississippi College and is proficient with Python and R package development, web development, genomics pipeline development, data analysis using Python, and data visualization using R.
  She co-created [Datasnakes](https://www.datasnakes.org/), an open-source organization and maintains several projects in it.
 
-- **Santina Lin** is a software engineer at Microsoft working on [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package development as well as adding R and Python runtime to SQL server.
- She completed her Master's degree in Bioinformatics at the University of British Columbia, where she used R for data analysis and visualization in addition to instructing R and statistics in a graduate-level course as a teaching assistant.
-
 - **Bruno M. Grande** is a Ph.D. candidate working on cancer genomics in [Ryan Morin's lab](https://morinlab.github.io/) at Simon Fraser University.
  An advocate for best practices in data science, he was a regular instructor and organizer of [Software Carpentry](https://software-carpentry.org/) and [SciProg](http://sciprog.ca/) workshops to help people overcome the reproducibility crisis in research.
  He dreams of publishing a Git repository that can reproduce every analysis from his thesis with a single command.
  beRi plays an important role in helping him achieve that goal.
+ 
+- **Santina Lin** is a software engineer at Microsoft working on [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package development as well as adding R and Python runtime to SQL server.
+ She completed her Master's degree in Bioinformatics at the University of British Columbia, where she used R for data analysis and visualization in addition to instructing R and statistics in a graduate-level course as a teaching assistant.
 
 # The Plan
 
-beRi is a suite of Python packages composed of the following components: (1) [renv](https://github.com/datasnakes/renv), a virtual environment manager for R; [rinse](https://github.com/datasnakes/rinse), an R installation and R version manager; and (3) [rut](https://github.com/datasnakes/rut), an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories.
+beRi is a suite of Python packages composed of the following components: (1) [renv](https://github.com/datasnakes/renv), a virtual environment manager for R; (2) [rinse](https://github.com/datasnakes/rinse), an R installation and R version manager; and (3) [rut](https://github.com/datasnakes/rut), an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories.
 These packages will be developed in separate repositories as standalone command-line interfaces (CLIs).
 [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository but will depend on the other three packages.
 
@@ -151,7 +151,7 @@ We have considered wrapping the R CMD INSTALL command, integrating a simpler ver
 
 The primary and initial goal for the beRi suite of tools was to create standalone packages.
 We looked to other programming languages for inspiration and R manuals and various documentations to keep the R ecosystem and R community in mind.
-The integration of the three tools under the beRi CLI will help us develop a custom project workflow with one cohesive interface.
+The main goals for the beRi CLI include a portable project workflow, an integrated filesystem, and a plugin/extension manager for implementing other tools.
 Once the standalone tools are functional, we will develop an analogous YAML configuration workflow for each package so that we can configure our environment with one YAML file and develop a beRi file-system.
 The `~/.beRi` folder, for instance, will contain any renv environments, R installations, CRAN-like repositories, and `.libPaths()` associated with beRi processes by default.
 While the development of beRi will affect some of the changes we make to the standalone CLI, we will never limit renv, rinse, or rut by linking them to each other or to beRi.

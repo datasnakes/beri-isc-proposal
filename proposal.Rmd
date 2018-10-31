@@ -12,8 +12,8 @@ output:
 ---
 
 **[Robert Gilmore](https://github.com/grabear)^1^,
-[Bruno Grande](https://github.com/edzer)^2^,
 [Shaurita Hutchins](https://github.com/sdhutchins)^1^,
+[Bruno Grande](https://github.com/edzer)^2^,
 [Santina Lin](https://github.com/santina)^3^**
 
 ^1^ Department of Psychiatry and Human Behavior, University of Mississippi Medical Center, Jackson, MS, United States  
@@ -104,13 +104,13 @@ In his current position at the [University of Mississippi Medical Center](https:
  She received her Master of Science in Biological Sciences from Mississippi College and is proficient with Python and R package development, web development, genomics pipeline development, data analysis using Python, and data visualization using R.
  She co-created [Datasnakes](https://www.datasnakes.org/), an open-source organization and maintains several projects in it.
 
-- **Santina Lin** is a software engineer at Microsoft working on [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package development as well as adding R and Python runtime to SQL server.
- She completed her Master's degree in Bioinformatics at the University of British Columbia, where she used R for data analysis and visualization in addition to instructing R and statistics in a graduate-level course as a teaching assistant.
-
 - **Bruno M. Grande** is a Ph.D. candidate working on cancer genomics in [Ryan Morin's lab](https://morinlab.github.io/) at Simon Fraser University.
  An advocate for best practices in data science, he was a regular instructor and organizer of [Software Carpentry](https://software-carpentry.org/) and [SciProg](http://sciprog.ca/) workshops to help people overcome the reproducibility crisis in research.
  He dreams of publishing a Git repository that can reproduce every analysis from his thesis with a single command.
  beRi plays an important role in helping him achieve that goal.
+ 
+- **Santina Lin** is a software engineer at Microsoft working on [RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler) package development as well as adding R and Python runtime to SQL server.
+ She completed her Master's degree in Bioinformatics at the University of British Columbia, where she used R for data analysis and visualization in addition to instructing R and statistics in a graduate-level course as a teaching assistant.
 
 # The Plan
 

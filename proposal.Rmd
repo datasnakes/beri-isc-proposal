@@ -49,7 +49,7 @@ BeRi caters to the R community by providing a practical, intuitive, and convenie
 
 ## Target Audience
 
-\indent\indent R is a popular data science language, especially in the academic and healthcare industries(1). Our target audience are individuals who would immediately benefit from a full-featured, local environment manager for the R language. They include computational researchers, R package developers, data scientists, and system administrators. By design, beRi will also appeal to new R users who lack a programming background, migrate from Python, or have experience using the command-line.
+\indent\indent R is a popular data science language, especially in the academic and healthcare industries(1). Our target audience is individuals who would immediately benefit from a full-featured, local environment manager for the R language. They include computational researchers, R package developers, data scientists, and system administrators. By design, beRi will also appeal to new R users who lack a programming background, migrate from Python, or have experience using the command-line.
 
 ## What beRi is not
 
@@ -97,7 +97,7 @@ These packages will be built in Python for Linux operating systems. We have opte
 
 ## beRi for Linux (Version 1.0)
 
-\indent\indent The beRi suite of tools will first be tested under the Linux OS. The dates below represent estimated points of completion and maybe be modified after further analysis of our workload with ZenHub.
+\indent\indent The beRi suite of tools will first be tested under the Linux OS. The dates below represent estimated points of completion and may be modified after further analysis of our workload with ZenHub.
 
 -   Development for Linux specifically Ubuntu LTS - June 2019
 -   **renv** - February 2019
@@ -137,7 +137,7 @@ These packages will be built in Python for Linux operating systems. We have opte
 
 ## Dissemination
 
-\indent\indent This project will use the MIT open-source license. The development process will take place in the [*[Datasnakes]{.underline}*](https://github.com/datasnakes) organization on GitHub. We will encourage discussion and contributions through GitHub issues and the R mailing lists. Additionally, we would like for the ISC to help us start a *working group* centered around reproducible environments for R. We plan to post regular updates about this project on beRi's [website](https://www.getberi.site/), on the Datasnakes' [Twitter](https://twitter.com/datasnakes) account and on the [r/rstats](https://www.reddit.com/r/rstats/) Reddit community. Additionally, we would like to write articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress. We will submit beRi and its suite of tools to PyPi and prepare for a publication in a scientific journal as we complete beRi.
+\indent\indent This project will use the MIT open-source license. The development process will take place in the [*[Datasnakes]{.underline}*](https://github.com/datasnakes) organization on GitHub. We will encourage discussion and contributions through GitHub issues and the R mailing lists. Additionally, we would like for the ISC to help us start a *working group* centered around reproducible environments for R. We plan to post regular updates about this project on beRi's [website](https://www.getberi.site/), on the Datasnakes' [Twitter](https://twitter.com/datasnakes) account, and on the [r/rstats](https://www.reddit.com/r/rstats/) Reddit community. Additionally, we would like to write articles for the R Consortium blog at the start, middle, and end of the project to document the project's progress. We will submit beRi and its suite of tools to PyPi and prepare for a publication in a scientific journal as we complete beRi.
 
 # References
 

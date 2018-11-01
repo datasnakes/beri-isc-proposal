@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>BeRi Environments for R Installations</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">beRi Isc Proposal</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="proposal.html">Proposal</a>
+</li>
+<li>
+  <a href="comp_table.html">Reproducible Tools Comparison</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/datasnakes/beri-isc-proposal">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">BeRi Environments for R Installations</h1>
+
+</div>
+
+
+<p><strong><a href="https://github.com/grabear">Robert Gilmore</a><sup>1</sup>, <a href="https://github.com/sdhutchins">Shaurita Hutchins</a><sup>1</sup>, <a href="https://github.com/scientificbruno">Bruno Grande</a><sup>2</sup>, <a href="https://github.com/santina">Santina Lin</a><sup>3</sup></strong></p>
+<p><sup>1</sup> Department of Psychiatry and Human Behavior, University of Mississippi Medical Center, Jackson, MS, United States<br />
+<sup>2</sup> Department of Molecular Biology and Biochemistry, Simon Fraser University, Burnaby, BC, Canada<br />
+<sup>3</sup> Microsoft Corporation, Redmond, WA, United States</p>
+<div id="preface" class="section level1">
+<h1>Preface</h1>
+<p>Reproducibility is crucial to scientific advancement according to the <a href="https://www.nih.gov/research-training/rigor-reproducibility">NIH</a>. Organizations such as RStudio and rOpenSci serve as proponents of reproducibility, which makes R-based data analysis increasingly more attractive in academia and in the healthcare industry where people need tools that improve reproducible research. Currently, several technologies exist that seek to accomplish this goal. The <a href="https://github.com/o2r-project/containerit">containerit</a> and <a href="https://github.com/rocker-org/rocker">rocker</a> projects, for example, incorporate containerization via Docker. However, many R users in academia and in the healthcare industry usually cannot utilize Docker because of system <a href="https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface">vulnerabilities</a> and the requirement for administrative privileges. This is also true of the <a href="https://docs.docker.com/install/linux/linux-postinstall/"><span class="underline">non-sudo workaround</span></a> for Docker as it grants the user sudo level permissions in the background. These issues are compounded in situations where system administrators are unable or unwilling to make time for configuring Docker.</p>
+<p>To address these issues, <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/use-r-language/">conda</a> has emerged as one of the most popular options for reproducibility. Researchers also employ various R packages including <a href="https://github.com/rstudio/packrat">packrat</a>, <a href="https://github.com/RevolutionAnalytics/checkpoint">checkpoint</a> (MRAN), <a href="https://github.com/andrie/miniCRAN">miniCRAN</a>, <a href="https://github.com/eddelbuettel/drat">drat</a>, <a href="https://github.com/jdblischak/workflowr">workflowr</a>, and <a href="https://github.com/ropensci/drake">drake</a>. While these packages are valuable, they limit users to using an interactive R session (the R shell). The proposed solution is the beRi suite of tools, which is an integrated command-line interface (CLI) for managing R. beRi is a recursive acronym, which stands for “beRi Environments for R Installations”. BeRi will aim to support reproducible workflows by allowing virtualization and standardization for data analysis, while also supporting R’s native infrastructure by developing a command-line tool similar to what’s present in other popular programming languages. By creating user-level environments to manage R workflows, we hope to enhance the way users are able to manage their R related projects.</p>
+</div>
+<div id="scope" class="section level1">
+<h1>Scope</h1>
+<div id="comparing-programming-languages" class="section level2">
+<h2>Comparing Programming Languages</h2>
+<p>Most programming languages commonly used by the data science community have a command-line package manager, which offers access to a standard or custom package repository. Python, for example, has <a href="https://pypi.org/project/pip/">pip</a> for <a href="https://pypi.org/">PyPi</a> and <a href="https://conda.io/docs/">conda</a> for <a href="https://anaconda.org/">Anaconda Cloud</a>. JavaScript has the <a href="https://github.com/npm/cli">npm-client</a> for the <a href="https://docs.npmjs.com/misc/registry">npm-registry</a>. Ruby has the <a href="https://github.com/rubygems/rubygems">gem-client</a> for <a href="https://rubygems.org/">RubyGems.org</a>. R natively provides the ability to use <em>R CMD INSTALL</em> for tarballs and <em>install.packages()</em> for CRAN packages, but not a native option for installing specific versions of packages or installing from GitHub. In addition to package management, researchers often need to locally install software. HPC systems, for instance, may lack required software, have fewer choices for different versions of software, or have the software configured ineffectively for the user’s needs. This is especially true for programming languages that frequently receive updates to their source code. To alleviate this, Python and Ruby have third-party interfaces (<a href="https://github.com/pyenv/pyenv">pyenv</a>, <a href="https://github.com/rbenv/rbenv">rbenv</a>, and <a href="https://github.com/jdblischak/workflowr">ruby-build</a>) that manage the installation and management of various versions of the programming language. While <a href="https://conda.io/docs/">conda</a> can manage to install R, it cannot manage multiple installed versions of the language.</p>
+</div>
+<div id="comparing-r-workflows" class="section level2">
+<h2>Comparing R Workflows</h2>
+<p>Currently, many workflow options exist that allows R users to manage their local environment to some degree. The most popular options are Docker (rocker/containerit), packrat, and conda. Docker offers containerization resulting in exact replicates of a system environment. The primary barrier for Docker is its requirement for administrative privileges, which slows its adoption in settings where time is a precious commodity for users and/or system administrators (<em>e.g.</em> academia).</p>
+<p>While packrat is an excellent tool for maintaining isolated, portable and reproducible local environments for R, larger projects tend to have more dependencies, which can increase the time of a packrat build. Anaconda’s ecosystem for R is most similar to our approach and has been the main subject of debate in the <a href="https://www.reddit.com/r/rstats/">r/rstats</a> subreddit and the <a href="https://twitter.com/hashtag/rstats">#rstats</a> Twitter forum.</p>
+</div>
+<div id="comparing-beri-and-conda" class="section level2">
+<h2>Comparing beRi and conda</h2>
+<p>     <a href="https://github.com/datasnakes/beRi">beRi</a> is a young project, which is being developed as a tool for managing R virtual environments, R installations, and R packages. Following the <a href="https://en.wikipedia.org/wiki/Unix_philosophy">UNIX philosophy</a>, we plan to divide these three goals into three modular packages, namely renv, rinse, and rut, respectively. These packages will form the basis for beRi, which will leverage their functionality and provide a unified and user-friendly experience for configuring local environments for R.</p>
+<p>Conversely, conda is a well-developed and popular data science framework for package and local environment management that was initially developed for Python distributions. While it is similar to beRi, there are some key differences that set conda and beRi apart for managing the R language.</p>
+<p>BeRi caters to the R community by providing a practical, intuitive, and convenient command-line interface for installing packages from CRAN, Bioconductor and other popular repositories such as MRAN, GitHub, and OmegaHat. <a href="https://cran.rstudio.com/web/packages/index.html">CRAN</a> alone has a package count of 13,285 with around 6,600 packages being actively maintained or updated within the past year. Currently, Anaconda <a href="https://docs.anaconda.com/anaconda/packages/r-language-pkg-docs/">lists</a> 328 available R packages on Anaconda Cloud, which is conda’s proprietary package management system. Bioconda is a third-party repository for bioinformatics recipes for the conda framework which includes Bioconductor recipes that correspond to Bioconductor packages. BeRi can serve as an equally if not more useful alternative in cases where users want access to GitHub packages in addition to the entire CRAN repository, Bioconductor, or other parts of the R ecosystem.</p>
+</div>
+<div id="target-audience" class="section level2">
+<h2>Target Audience</h2>
+<p>R is a popular data science language, especially in the academic and healthcare industries(1). Our target audience is individuals who would immediately benefit from a full-featured, local environment manager for the R language. They include computational researchers, R package developers, data scientists, and system administrators. By design, beRi will also appeal to new R users who lack a programming background, migrate from Python, or have experience using the command-line.</p>
+</div>
+<div id="what-beri-is-not" class="section level2">
+<h2>What beRi is not</h2>
+<p>Unlike conda and Anaconda Cloud, we do not aim to implement a dependency resolution system, nor do we wish to maintain a package repository. We plan on leveraging the existing facilities in R for installing packages from existing R repositories.</p>
+</div>
+</div>
+<div id="the-team---datasnakes" class="section level1">
+<h1>The Team - Datasnakes</h1>
+<p>     <a href="https://github.com/orgs/datasnakes/teams/team-beri">Team-beRi</a>, also known as the <a href="https://www.datasnakes.org/">Datasnakes</a>, is invested in the bioinformatics community as researchers and engineers. We also create open-source tools for ourselves and others in the bioinformatics community. Our motivations for prototyping beRi are rooted in our own needs for tools that allow you to manage your local environment for using the R language. At the <a href="https://www.hackseq.com/">hackseq18</a> genomics hackathon in Vancouver, BC, Canada, beRi was developed by the Datasnakes, where it ultimately won by popular vote. <a href="http://hadley.nz/"><span class="underline">Hadley Wickham</span></a>, Chief Scientist at Rstudio and <a href="https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Faculty/Faculty%20Profiles/Eric%20J.Vallender,%20PhD.html"><span class="underline">Dr. Eric Vallender</span></a>, Associate Professor at the University of Mississippi Medical Center, advised us during the writing process of this proposal.</p>
+<div id="project-manager" class="section level2">
+<h2>Project Manager</h2>
+<p>     <a href="https://www.linkedin.com/in/robert-gilmore-7b451592"><strong>Rob Gilmore</strong></a> conceived and designed the beRi toolset. At hackseq18, he led the team to success as the winners of the hackathon. Gilmore was trained in <a href="https://www.abe.msstate.edu/academics/undergraduate/biomedical-engineering/curriculum/">Biomedical Engineering</a> at Mississippi State University. At the <a href="https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html">University of Mississippi Medical Center</a>, he gained 3 years of bioinformatics experience. During his time at UMMC, he used the HPC system at the <a href="https://mcsr.olemiss.edu/research/"><span class="underline">Mississippi Center for Supercomputing Research</span></a> to develop and manage large-scale bioinformatics pipelines using Linux, Windows, Python, R, and Bash.</p>
+</div>
+<div id="lead-maintainers" class="section level2">
+<h2>Lead Maintainers</h2>
+<ul>
+<li><p><strong>Shaurita D. Hutchins</strong> is a Researcher II at the <a href="https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Centers/Divisions,%20Centers,%20Divisions%20and%20Research/Neurobiology-and-Behavior-Research/Overview.html">University of Mississippi Medical Center</a>. She received her Master of Science in Biological Sciences from Mississippi College and is proficient with Python and R package development, web development, genomics pipeline development, data analysis using Python, and data visualization using R. She co-created the <a href="https://www.datasnakes.org/">Datasnakes</a>, an open-source organization and maintains several projects in it.</p></li>
+<li><p><strong>Bruno M. Grande</strong> is a Ph.D.Â candidate working on cancer genomics in <a href="https://morinlab.github.io/">Ryan Morin’s lab</a> at Simon Fraser University. An advocate for best practices in data science, he was a regular instructor and organizer of <a href="https://software-carpentry.org/">Software Carpentry</a> and <a href="http://sciprog.ca/">SciProg</a> workshops to help people utilize reproducible workflows. He dreams of publishing a Git repository that can reproduce every analysis from his thesis with a single command. beRi plays an important role in helping him achieve that goal.</p></li>
+<li><p><strong>Santina Lin</strong> is a software engineer at Microsoft working on <a href="https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler">RevoScaleR</a> package and R and Python in SQL server. She completed her Master’s degree in Bioinformatics at the University of British Columbia, where she used R for data analysis and has taught people R and statistics in a graduate-level course as a teaching assistant.</p></li>
+</ul>
+</div>
+</div>
+<div id="the-plan" class="section level1">
+<h1>The Plan</h1>
+<p>BeRi is a command-line interface composed of the following subcomponents: (1) <a href="https://github.com/datasnakes/renv">renv</a>, a virtual environment manager for R; (2) <a href="https://github.com/datasnakes/rinse">rinse</a>, an R installation and R version manager; and (3) <a href="https://github.com/datasnakes/rut">rut</a>, an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories. These packages will be developed in separate repositories as standalone command-line interfaces (CLIs). <a href="https://github.com/datasnakes/beRi"><span class="underline">BeRi</span></a> will also be developed in a separate repository but will integrate the other three packages into one tool.</p>
+<p>These packages will be built in Python for Linux operating systems. We have opted to use Python because of the ease of developing CLIs using the powerful standard library and PyPi packages available for Python as compared to R or Bash. Specifically, we are using the <a href="https://palletsprojects.com/p/click/">click</a> Python package to build the CLIs. We will optimize our Python packages for the R ecosystem by adhering to the <a href="https://cran.r-project.org/doc/manuals/">R manuals</a>. Once we have achieved stable builds on Ubuntu, we will broaden our compatibility to include additional popular Linux distributions, Windows, and macOS.</p>
+<div id="renv-standalone-cli" class="section level2">
+<h2>renv (Standalone CLI)</h2>
+<p>renv, short for R virtual environment, is a Python-style virtual environment manager for R. It will use Python’s venv <a href="https://github.com/python/cpython/blob/3.6/Lib/venv/__init__.py#L17">EnvBuilder</a> module along with <a href="https://github.com/audreyr/cookiecutter">cookiecutter</a> in order to deploy the proper shell scripts and R configuration files (.Rprofile, .Renviron). A directory will be utilized in the user’s home directory (~/.renv) as a repository for any virtual environments created. These virtual environments will be configurable with the .Rprofile and .Renviron files as well as a custom YAML file.</p>
+</div>
+<div id="rinse-standalone-cli" class="section level2">
+<h2>rinse (Standalone CLI)</h2>
+<p>rinse, short for R installer, is currently a simple installer for the latest version of R. In the future, we would like to implement features similar to <a href="https://github.com/pyenv/pyenv/blob/master/COMMANDS.md">pyvenv</a>. This includes installing/uninstalling R from source, managing R dependencies, and switching between versions of R. Installing <a href="https://mran.microsoft.com/open">Microsoft R Open</a> or <a href="https://en.wikipedia.org/wiki/R_(programming_language)#Implementations">other R implementations</a> will also be considered.</p>
+</div>
+<div id="rut-standalone-cli" class="section level2">
+<h2>rut (Standalone CLI)</h2>
+<p>Currently, rut can install packages from CRAN using <a href="https://github.com/r-lib">r-lib</a>’s <a href="https://github.com/r-lib/remotes">remotes</a> package. As the least developed package and most difficult to implement, rut will require more attention in order to develop it with best practices and integrate it with beRi. We have considered wrapping the <em>R CMD INSTALL</em> command, integrating a simpler version of <a href="https://github.com/ankane/jetpack">jetpack</a>, or utilizing <a href="https://rpy2.readthedocs.io/en/version_2.8.x/">rpy2</a> for getting interpreter specific information.</p>
+</div>
+<div id="beri-integrated-cli" class="section level2">
+<h2>beRi (Integrated CLI)</h2>
+<p>The main goals for the beRi CLI include seamlessly integrating renv, rinse, and rut by establishing a unified directory structure and creating a portable project workflow. By creating a user level configuration directory, we hope to enhance our ability to configure R for beRi projects. The ~/.beri folder, for instance, will contain any renv environments, rinse R installations, and rut package installations associated with beRi processes by default. Our configuration and management process for beRi projects will involve the use of YAML files for each standalone package (<em>renv.yaml, rinse.yaml, and rut.yaml</em>). A top-level YAML file will also be used with beRi (<em>beRi.yaml</em>) as a master configuration file for making our projects portable.</p>
+</div>
+</div>
+<div id="project-milestones" class="section level1">
+<h1>Project Milestones</h1>
+<div id="beri-for-linux-version-1.0" class="section level2">
+<h2>beRi for Linux (Version 1.0)</h2>
+<p>The beRi suite of tools will first be tested under the Linux OS. The dates below represent estimated points of completion and may be modified after further analysis of our workload with ZenHub.</p>
+<ul>
+<li>Development for Linux specifically Ubuntu LTS - June 2019</li>
+<li><strong>renv</strong> - February 2019
+<ul>
+<li>Successfully Create Virtual Environments - Completed</li>
+<li>Resolve minor R warnings - January 2019</li>
+<li>Code testing and linting; Create documentation and tutorials; Publish package to PyPi - February 2019</li>
+</ul></li>
+<li><strong>rut</strong> - March 2019
+<ul>
+<li>Extend to global package management - February 2019</li>
+<li>Code testing and linting; Create documentation and tutorials; Publish package to PyPi - March 2019</li>
+<li>Secondary Goal - Manage local CRAN-like repositories</li>
+<li>Secondary Goal - Extend rut for managing projects with packrat</li>
+</ul></li>
+<li><strong>rinse</strong> - April 2019
+<ul>
+<li>Manage the Installation of R from source - March 2019</li>
+<li>Integrate Microsoft R Open - April 2019</li>
+<li>Code testing and linting; Create documentation using sphinx and tutorials; Publish package to PyPi - May 2019</li>
+<li>Secondary Goal - Reverse engineer pyenv</li>
+</ul></li>
+<li><strong>beRi</strong> - May 2019
+<ul>
+<li>Incorporate YAML configuration for renv, rinse, rut; Begin writing manuscript for beRi - April 2019</li>
+<li>Incorporate YAML configuration for beRi; Create a beRi user config directory- May 2019</li>
+<li>Code testing and linting; Create documentation using sphinx and tutorials; Publish package to PyPi - June 2019</li>
+<li>Complete writing manuscript for beRi - July 2019</li>
+</ul></li>
+<li>Development for other Linux Distributions - July 2019</li>
+</ul>
+</div>
+</div>
+<div id="how-can-the-isc-help" class="section level1">
+<h1>How Can The ISC Help</h1>
+<p>The total costs of this project will be <strong>$20,000</strong> split into the following items:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Item</strong></th>
+<th align="left"><strong>Purpose</strong></th>
+<th align="left"><strong>Cost</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Development</td>
+<td align="left">To compensate the project’s developers</td>
+<td align="left">$16,000</td>
+</tr>
+<tr class="even">
+<td align="left">Travel</td>
+<td align="left">To cover travel costs for a conference presentation and team meeting</td>
+<td align="left">$2,000</td>
+</tr>
+<tr class="odd">
+<td align="left">Project Management</td>
+<td align="left">To purchase project management tools including Slack &amp; Digital Ocean</td>
+<td align="left">$1,000</td>
+</tr>
+<tr class="even">
+<td align="left">Dissemination</td>
+<td align="left">To pay for any publication costs</td>
+<td align="left">$1,000</td>
+</tr>
+</tbody>
+</table>
+<div id="section" class="section level2">
+<h2></h2>
+</div>
+<div id="dissemination" class="section level2">
+<h2>Dissemination</h2>
+<p>This project will use the MIT open-source license. The development process will take place in the <a href="https://github.com/datasnakes"><em><span class="underline">Datasnakes</span></em></a> organization on GitHub. We will encourage discussion and contributions through GitHub issues and the R mailing lists. Additionally, we would like for the ISC to help us start a <em>working group</em> centered around reproducible environments for R. We plan to post regular updates about this project on beRi’s <a href="https://www.getberi.site/">website</a>, on the Datasnakes’ <a href="https://twitter.com/datasnakes">Twitter</a> account, and on the <a href="https://www.reddit.com/r/rstats/">r/rstats</a> Reddit community. Additionally, we would like to write articles for the R Consortium blog at the start, middle, and end of the project to document the project’s progress. We will submit beRi and its suite of tools to PyPi and prepare for a publication in a scientific journal as we complete beRi.</p>
+</div>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<p>1. Robinson D. The impressive growth of R - stack overflow blog. <a href="https://stackoverflow.blog/2017/10/10/impressive-growth-r/" class="uri">https://stackoverflow.blog/2017/10/10/impressive-growth-r/</a>; 2017.</p>
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+<footer><p>Copyright &copy; 2018 Datasnakes.</p></footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

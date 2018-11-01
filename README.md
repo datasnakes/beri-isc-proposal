@@ -1,7 +1,7 @@
 # beRi ISC Proposal
 
 **[Robert Gilmore](https://github.com/grabear)<sup>1</sup>,
-[Bruno Grande](https://github.com/edzer)<sup>2</sup>,
+[Bruno Grande](https://github.com/scientificbruno)<sup>2</sup>,
 [Shaurita Hutchins](https://github.com/sdhutchins)<sup>1</sup>,
 [Santina Lin](https://github.com/santina)<sup>3</sup>**
 

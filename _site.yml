@@ -1,0 +1,21 @@
+name: "beri-isc-proposal"
+navbar:
+  title: "beRi Isc Proposal"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Proposal"
+      href: proposal.html
+    - text: "Reproducible Tools Comparison"
+      href: comp_table.html
+  right:
+    - icon: fa-github
+      href: https://github.com/datasnakes/beri-isc-proposal
+output:
+  html_document:
+    theme: yeti
+    inverse: true
+    highlight: textmate
+    include:
+      after_body: footer.Rmd

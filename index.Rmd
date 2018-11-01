@@ -1,4 +1,8 @@
-# beRi ISC Proposal
+---
+title: An ISC Proposal for [BeRi Environments for R Installations](https://github.com/datasnakes/beRi)
+---
+
+This proposal was written by the [Datasnakes](https://github.com/datasnakes).
 
 **[Robert Gilmore](https://github.com/grabear)<sup>1</sup>,
 [Bruno Grande](https://github.com/scientificbruno)<sup>2</sup>,
@@ -8,18 +12,16 @@
 <sup>1</sup> University of Mississippi Medical Center, Jackson, MS, United States  
 <sup>2</sup> Department of Molecular Biology and Biochemistry, Simon Fraser University, Burnaby, BC, Canada  
 <sup>3</sup> Microsoft Corporation, Redmond, WA, United States  
-<br>
 
 ## Render
 
-The proposal is written in Markdown and includes citations.
+The proposal is written in rmarkdown and includes citations.
 You must first install pandoc and pandoc-citeproc.
 
 ```console
 pandoc --filter pandoc-citeproc proposal.md -s -o proposal.pdf
 ```
-<br>
 
-## View the proposal
+## Help Us Improve BeRi
 
-View the [markdown version](https://github.com/datasnakes/beri-isc-proposal/blob/master/proposal.md) of our proposal.
+Please feel free to provide feedback about this project by [opening an issue](https://github.com/datasnakes/beri-isc-proposal/issues/new). We want this project to cater to the greater R community and specifically to those who are invested in [rOpenSci](https://ropensci.org/) and [rstats](https://www.reddit.com/r/rstats/).

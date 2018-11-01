@@ -1,8 +1,5 @@
 ---
-title: "comparison_table"
-author: "Rob Gilmore"
-date: "October 29, 2018"
-output: pdf_document
+title: Reproducible Tools Comparison
 classoption: landscape
 ---
 
@@ -11,10 +8,12 @@ knitr::opts_chunk$set(echo = FALSE)
 library(magrittr)
 ```
 
+Below are two tables in which we've compiled information about our tools and other reproducibility tools for R.
+
 ## Table Comparing Reproducibility Tools
 
 ```{r}
-dt1 <- read.csv("beRi - Comparing Tools - Publish1.csv")
+dt1 <- read.csv("beRi - Comparing Tools - Publish1.csv", stringsAsFactors = FALSE)
 kableExtra::kable(dt1) %>% kableExtra::row_spec(0,bold=TRUE) %>% 
   kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
 ```
@@ -22,7 +21,7 @@ kableExtra::kable(dt1) %>% kableExtra::row_spec(0,bold=TRUE) %>%
 ## Table Comparing Project Specifications
 
 ```{r}
-dt2 <- read.csv("beRi - Comparing Tools - Publish2.csv")
+dt2 <- read.csv("beRi - Comparing Tools - Publish2.csv", stringsAsFactors = TRUE)
 kableExtra::kable(dt2) %>% kableExtra::row_spec(0,bold=TRUE) %>% 
   kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
 ```

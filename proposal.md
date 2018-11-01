@@ -5,7 +5,7 @@ October 28th, 2018
                 **[Robert
 Gilmore](https://github.com/grabear)<sup>1</sup>, [Shaurita
 Hutchins](https://github.com/sdhutchins)<sup>1</sup>, [Bruno
-Grande](https://github.com/edzer)<sup>2</sup>, [Santina
+Grande](https://github.com/scientificbruno)<sup>2</sup>, [Santina
 Lin](https://github.com/santina)<sup>3</sup>**
 
 <sup>1</sup> Department of Psychiatry and Human Behavior, University of
@@ -74,7 +74,7 @@ Cloud](https://anaconda.org/). JavaScript has the
 [RubyGems.org](https://rubygems.org/). R natively provides the ability
 to use *R CMD INSTALL* for tarballs and *install.packages()* for CRAN
 packages, but not a native option for installing specific versions of
-packages or installing from GitHub.In addition to package management,
+packages or installing from GitHub. In addition to package management,
 researchers often need to locally install software. HPC systems, for
 instance, may lack required software, have fewer choices for different
 versions of software, or have the software configured ineffectively for
@@ -290,7 +290,7 @@ interpreter specific information.
 The main goals for the beRi CLI include seamlessly integrating renv,
 rinse, and rut by establishing a unified directory structure and
 creating a portable project workflow. By creating a user level
-configuration directory,, we hope to enhance our ability to configure R
+configuration directory, we hope to enhance our ability to configure R
 for beRi projects. The \~/.beri folder, for instance, will contain any
 renv environments, rinse R installations, and rut package installations
 associated with beRi processes by default. Our configuration and

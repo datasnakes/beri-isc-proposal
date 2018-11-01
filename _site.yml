@@ -1,4 +1,5 @@
 name: "beri-isc-proposal"
+output_dir: "."
 navbar:
   title: "beRi Isc Proposal"
   type: inverse

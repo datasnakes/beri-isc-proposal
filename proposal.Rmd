@@ -91,7 +91,7 @@ These packages will be built in Python for Linux operating systems. We have opte
 
 ## beRi (Integrated CLI)
 
-\indent\indent The main goals for the beRi CLI include seamlessly integrating renv, rinse, and rut by establishing a unified directory structure and creating a portable project workflow. By creating a user level configuration directory,, we hope to enhance our ability to configure R for beRi projects. The \~/.beri folder, for instance, will contain any renv environments, rinse R installations, and rut package installations associated with beRi processes by default. Our configuration and management process for beRi projects will involve the use of YAML files for each standalone package (*renv.yaml, rinse.yaml, and rut.yaml*). A top-level YAML file will also be used with beRi (*beRi.yaml*) as a master configuration file for making our projects portable.
+\indent\indent The main goals for the beRi CLI include seamlessly integrating renv, rinse, and rut by establishing a unified directory structure and creating a portable project workflow. By creating a user level configuration directory, we hope to enhance our ability to configure R for beRi projects. The \~/.beri folder, for instance, will contain any renv environments, rinse R installations, and rut package installations associated with beRi processes by default. Our configuration and management process for beRi projects will involve the use of YAML files for each standalone package (*renv.yaml, rinse.yaml, and rut.yaml*). A top-level YAML file will also be used with beRi (*beRi.yaml*) as a master configuration file for making our projects portable.
 
 # Project Milestones
 

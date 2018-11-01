@@ -343,7 +343,7 @@ items:
 
 | **Item**           | **Purpose**                                                          | **Cost** |
 | :----------------- | :------------------------------------------------------------------- | :------- |
-| Development        | To compensate the project’s developers                               | $16,00   |
+| Development        | To compensate the project’s developers                               | $16,000  |
 | Travel             | To cover travel costs for a conference presentation and team meeting | $2,000   |
 | Project Management | To purchase project management tools including Slack & Digital Ocean | $1,000   |
 | Dissemination      | To pay for any publication costs                                     | $1,000   |

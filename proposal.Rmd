@@ -5,15 +5,15 @@ bibliography: bibliography.bib
 csl: vancouver.csl
 linkcolor: blue
 output:
-  pdf_document: default
+  github_document: default
   word_document: default
   html_document: default
-  github_document: default
+  pdf_document: default
 ---
 
 **[Robert Gilmore](https://github.com/grabear)^1^,
-[Bruno Grande](https://github.com/edzer)^2^,
 [Shaurita Hutchins](https://github.com/sdhutchins)^1^,
+[Bruno Grande](https://github.com/edzer)^2^,
 [Santina Lin](https://github.com/santina)^3^**
 
 ^1^ Department of Psychiatry and Human Behavior, University of Mississippi Medical Center, Jackson, MS, United States  

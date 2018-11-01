@@ -14,7 +14,7 @@ output:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Robert Gilmore](https://github.com/grabear)^1^,
 [Shaurita Hutchins](https://github.com/sdhutchins)^1^,
-[Bruno Grande](https://github.com/edzer)^2^,
+[Bruno Grande](https://github.com/scientificbruno)^2^,
 [Santina Lin](https://github.com/santina)^3^**
 
 \noindent ^1^ Department of Psychiatry and Human Behavior, University of Mississippi Medical Center, Jackson, MS, United States  

@@ -11,7 +11,7 @@
 
 
 
-<title>Reproducible Tools Comparison</title>
+<title>A Comparison of Reproducible Tools</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,9 +23,7 @@
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -93,9 +91,6 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -210,19 +205,22 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Reproducible Tools Comparison</h1>
+<h1 class="title toc-ignore">A Comparison of Reproducible Tools</h1>
 
 </div>
 
 
-<p>Below are two tables in which we’ve compiled information about our tools and other reproducibility tools for R.</p>
-<div id="table-comparing-reproducibility-tools" class="section level2">
-<h2>Table Comparing Reproducibility Tools</h2>
+<p>Below is a table of project management tools for R, along with the meaning of the acronyms that we used.</p>
+<div id="comparison-of-project-management-tools" class="section level2">
+<h2>Comparison of Project Management Tools</h2>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;font-weight: bold;">
 Tool
+</th>
+<th style="text-align:left;font-weight: bold;">
+CLI
 </th>
 <th style="text-align:right;font-weight: bold;">
 Stars
@@ -231,517 +229,16 @@ Stars
 Forks
 </th>
 <th style="text-align:left;font-weight: bold;">
-Type
-</th>
-<th style="text-align:left;font-weight: bold;">
-Install.Packages
-</th>
-<th style="text-align:left;font-weight: bold;">
-Remote.Repo
-</th>
-<th style="text-align:left;font-weight: bold;">
-Local.Repo
-</th>
-<th style="text-align:left;font-weight: bold;">
-Install.R
-</th>
-<th style="text-align:left;font-weight: bold;">
 Sudo
 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-beRi
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-renv
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-rut
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-rinse
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-conda
-</td>
-<td style="text-align:right;">
-2470
-</td>
-<td style="text-align:right;">
-616
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No?
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-bioconda
-</td>
-<td style="text-align:right;">
-807
-</td>
-<td style="text-align:right;">
-871
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No?
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-rocker
-</td>
-<td style="text-align:right;">
-836
-</td>
-<td style="text-align:right;">
-212
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No?
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-containerit
-</td>
-<td style="text-align:right;">
-122
-</td>
-<td style="text-align:right;">
-13
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No?
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-RS Package Manager
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:left;">
-CLI
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-packrat
-</td>
-<td style="text-align:right;">
-278
-</td>
-<td style="text-align:right;">
-69
-</td>
-<td style="text-align:left;">
-R Package
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-jetpack
-</td>
-<td style="text-align:right;">
-137
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-R Package CLI
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-miniCRAN
-</td>
-<td style="text-align:right;">
-88
-</td>
-<td style="text-align:right;">
-28
-</td>
-<td style="text-align:left;">
-R Package
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-drat
-</td>
-<td style="text-align:right;">
-95
-</td>
-<td style="text-align:right;">
-74
-</td>
-<td style="text-align:left;">
-R Package
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-workflowr
-</td>
-<td style="text-align:right;">
-229
-</td>
-<td style="text-align:right;">
-36
-</td>
-<td style="text-align:left;">
-R Package
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-checkpoint
-</td>
-<td style="text-align:right;">
-103
-</td>
-<td style="text-align:right;">
-26
-</td>
-<td style="text-align:left;">
-R Package
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-drake
-</td>
-<td style="text-align:right;">
-481
-</td>
-<td style="text-align:right;">
-43
-</td>
-<td style="text-align:left;">
-R Package
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="table-comparing-project-specifications" class="section level2">
-<h2>Table Comparing Project Specifications</h2>
-<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
 <th style="text-align:left;font-weight: bold;">
-Tool
+Operating.System
+</th>
+<th style="text-align:left;font-weight: bold;">
+Primary.Features
+</th>
+<th style="text-align:left;font-weight: bold;">
+Features
 </th>
 <th style="text-align:left;font-weight: bold;">
 Project.Deployment.Strategy
@@ -760,27 +257,31 @@ Project.Portability
 <tbody>
 <tr>
 <td style="text-align:left;">
-beRi
-</td>
-<td style="text-align:left;">
-Python - venv
-</td>
-<td style="text-align:left;">
-Config File
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-<td style="text-align:left;">
-Yes
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 renv
 </td>
 <td style="text-align:left;">
-Python - venv
+Yes
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Linux
+</td>
+<td style="text-align:left;">
+VE;
+</td>
+<td style="text-align:left;">
+PM;
+</td>
+<td style="text-align:left;">
+VE
 </td>
 <td style="text-align:left;">
 Config File
@@ -797,7 +298,26 @@ Yes
 rut
 </td>
 <td style="text-align:left;">
-Package Manager
+Yes
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Linux
+</td>
+<td style="text-align:left;">
+NPM;
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
 </td>
 <td style="text-align:left;">
 Config File
@@ -814,7 +334,26 @@ Yes
 rinse
 </td>
 <td style="text-align:left;">
-Source Compiler
+Yes
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Linux
+</td>
+<td style="text-align:left;">
+NRI;
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
 </td>
 <td style="text-align:left;">
 Config File
@@ -828,14 +367,40 @@ Yes
 </tr>
 <tr>
 <td style="text-align:left;">
+beRi
 </td>
 <td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+0
 </td>
 <td style="text-align:left;">
+No
 </td>
 <td style="text-align:left;">
+Linux
 </td>
 <td style="text-align:left;">
+NST; VE;
+</td>
+<td style="text-align:left;">
+PM;
+</td>
+<td style="text-align:left;">
+VE; OS;
+</td>
+<td style="text-align:left;">
+Config File
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
 </td>
 </tr>
 <tr>
@@ -843,7 +408,28 @@ Yes
 conda
 </td>
 <td style="text-align:left;">
-Venv and Package Manager
+Yes
+</td>
+<td style="text-align:right;">
+2470
+</td>
+<td style="text-align:right;">
+616
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+PST; VE;
+</td>
+<td style="text-align:left;">
+PM;
+</td>
+<td style="text-align:left;">
+VE; OS;
 </td>
 <td style="text-align:left;">
 Config File
@@ -860,7 +446,26 @@ Yes
 bioconda
 </td>
 <td style="text-align:left;">
-Conda Bundles and Recipes
+Yes
+</td>
+<td style="text-align:right;">
+807
+</td>
+<td style="text-align:right;">
+871
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+PR;
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
 </td>
 <td style="text-align:left;">
 Config File
@@ -877,7 +482,27 @@ Yes
 rocker
 </td>
 <td style="text-align:left;">
-Rocker Images
+Yes
+</td>
+<td style="text-align:right;">
+836
+</td>
+<td style="text-align:right;">
+212
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+PR; CI
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+CI
 </td>
 <td style="text-align:left;">
 None
@@ -894,7 +519,28 @@ No
 containerit
 </td>
 <td style="text-align:left;">
-Rocker Images
+Yes
+</td>
+<td style="text-align:right;">
+122
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+CI
+</td>
+<td style="text-align:left;">
+PM; RP;
+</td>
+<td style="text-align:left;">
+CI
 </td>
 <td style="text-align:left;">
 Config File
@@ -908,17 +554,40 @@ Yes
 </tr>
 <tr>
 <td style="text-align:left;">
-RS Package Manager
+jetpack
 </td>
 <td style="text-align:left;">
-?
+Yes
+</td>
+<td style="text-align:right;">
+137
+</td>
+<td style="text-align:right;">
+10
 </td>
 <td style="text-align:left;">
-?
+No
 </td>
 <td style="text-align:left;">
+Cross-Platform
 </td>
 <td style="text-align:left;">
+NST;
+</td>
+<td style="text-align:left;">
+PM; RP;
+</td>
+<td style="text-align:left;">
+OS;
+</td>
+<td style="text-align:left;">
+Packrat Projects
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
 </td>
 </tr>
 <tr>
@@ -926,24 +595,28 @@ RS Package Manager
 packrat
 </td>
 <td style="text-align:left;">
-Packrat Projects
+No
+</td>
+<td style="text-align:right;">
+278
+</td>
+<td style="text-align:right;">
+69
 </td>
 <td style="text-align:left;">
-Packrat Projects
+No
 </td>
 <td style="text-align:left;">
-Yes
+Cross-Platform
 </td>
 <td style="text-align:left;">
-Yes
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-jetpack
+NST;
 </td>
 <td style="text-align:left;">
-Packrat Projects
+PM; RP;
+</td>
+<td style="text-align:left;">
+OS;
 </td>
 <td style="text-align:left;">
 Packrat Projects
@@ -960,7 +633,27 @@ Yes
 miniCRAN
 </td>
 <td style="text-align:left;">
-CRAN-like Repositories
+No
+</td>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+NRM;
+</td>
+<td style="text-align:left;">
+RP;
+</td>
+<td style="text-align:left;">
 </td>
 <td style="text-align:left;">
 Dependency Graphs
@@ -977,7 +670,27 @@ No
 drat
 </td>
 <td style="text-align:left;">
-Drat Repositories
+No
+</td>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+PRM
+</td>
+<td style="text-align:left;">
+RP;
+</td>
+<td style="text-align:left;">
 </td>
 <td style="text-align:left;">
 Drat Repositories
@@ -994,7 +707,28 @@ No
 workflowr
 </td>
 <td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+229
+</td>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+PM; OF;
+</td>
+<td style="text-align:left;">
 Development Workflow
+</td>
+<td style="text-align:left;">
+OS;
 </td>
 <td style="text-align:left;">
 GitHub Pages Website
@@ -1011,7 +745,27 @@ No
 checkpoint
 </td>
 <td style="text-align:left;">
-MRAN Snapshot Repositories
+No
+</td>
+<td style="text-align:right;">
+103
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+NRM;
+</td>
+<td style="text-align:left;">
+RP;
+</td>
+<td style="text-align:left;">
 </td>
 <td style="text-align:left;">
 Pre-Config Scripting
@@ -1028,7 +782,27 @@ Yes
 drake
 </td>
 <td style="text-align:left;">
-Development Workflow
+No
+</td>
+<td style="text-align:right;">
+481
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Cross-Platform
+</td>
+<td style="text-align:left;">
+OF;
+</td>
+<td style="text-align:left;">
+RP;
+</td>
+<td style="text-align:left;">
 </td>
 <td style="text-align:left;">
 Pre-Config Scripting
@@ -1042,6 +816,38 @@ No
 </tr>
 </tbody>
 </table>
+<div id="deployment-strategy" class="section level3">
+<h3>Deployment Strategy</h3>
+<ul>
+<li>VE = Virtual Environment</li>
+<li>CI = Container Image</li>
+<li>OS = Other Strategy</li>
+</ul>
+</div>
+<div id="other-features" class="section level3">
+<h3>Other Features</h3>
+<ul>
+<li>PM = Project Management</li>
+<li>CLI = Command Line Interface</li>
+<li>RP = R Package</li>
+</ul>
+</div>
+<div id="primary-features" class="section level3">
+<h3>Primary Features</h3>
+<ul>
+<li>PPM = Proprietary Package Manager</li>
+<li>PRI = Proprietary R Installation</li>
+<li>PR = Proprietary Repository</li>
+<li>PRM = Proprietary Repository Manager</li>
+<li>PST = Proprietary Suite of Tools</li>
+<li>NPM = Native Package Manager</li>
+<li>NRI = Native R Installation</li>
+<li>NR = Native Repository</li>
+<li>NRM = Native Repository Manager</li>
+<li>NST = Native Suite of Tools</li>
+<li>OF = Other Feature(s)</li>
+</ul>
+</div>
 </div>
 
 <br>

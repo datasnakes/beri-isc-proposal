@@ -1,5 +1,5 @@
 ---
-title: A Comparison of Reproducible Tools
+title: "A Comparison of Reproducible Tools"
 classoption: landscape
 ---
 
@@ -8,20 +8,44 @@ knitr::opts_chunk$set(echo = FALSE)
 library(magrittr)
 ```
 
-Below are two tables in which we've compiled information about our tools and other reproducibility tools for R.
+Below is a table of project management tools for R, along with the meaning of the acronyms that we used.
 
-## Table Comparing Reproducibility Tools
+## Comparison of Project Management Tools
 
 ```{r}
-dt1 <- read.csv("beRi - Comparing Tools - Publish1.csv", stringsAsFactors = FALSE)
+dt1 <- read.csv("comparison.csv", stringsAsFactors = FALSE)
 kableExtra::kable(dt1) %>% kableExtra::row_spec(0,bold=TRUE) %>% 
   kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
 ```
 
-## Table Comparing Project Specifications
 
-```{r}
-dt2 <- read.csv("beRi - Comparing Tools - Publish2.csv", stringsAsFactors = TRUE)
-kableExtra::kable(dt2) %>% kableExtra::row_spec(0,bold=TRUE) %>% 
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
-```
+### Deployment Strategy
+
+* VE  = Virtual Environment
+* CI  = Container Image
+* OS  = Other Strategy
+
+### Other Features
+
+* PM  = Project Management
+* CLI = Command Line Interface
+* RP  = R Package
+
+
+### Primary Features
+
+* PPM = Proprietary Package Manager
+* PRI = Proprietary R Installation
+* PR  = Proprietary Repository
+* PRM = Proprietary Repository Manager
+* PST = Proprietary Suite of Tools
+* NPM = Native Package Manager
+* NRI = Native R Installation
+* NR  = Native Repository
+* NRM = Native Repository Manager
+* NST = Native Suite of Tools
+* OF  = Other Feature(s)
+
+
+
+

@@ -1,0 +1,16 @@
+Tool,CLI,Stars,Forks,Sudo,Operating System,Primary Features,Features,Project Deployment Strategy,Project Sharing Strategy,Project Isolation,Project Portability
+renv,Yes,4,0,No,Linux,VE;,PM; ,VE,Config File,Yes,Yes
+rut,Yes,2,0,No,Linux,NPM;,,,Config File,No,Yes
+rinse,Yes,2,0,No,Linux,NRI;,,,Config File,No,Yes
+beRi,Yes,9,0,No,Linux,NST; VE;,PM;,VE; OS;,Config File,Yes,Yes
+conda,Yes,2470,616,No,Cross-Platform,PST; VE;,PM; ,VE; OS;,Config File,Yes,Yes
+bioconda,Yes,807,871,No,Cross-Platform,PR;,,,Config File,Yes,Yes
+rocker,Yes,836,212,Yes,Cross-Platform,PR; CI,,CI,None,Yes,No
+containerit,Yes,122,13,Yes,Cross-Platform,CI,PM;  RP;,CI,Config File,Yes,Yes
+jetpack,Yes,137,10,No,Cross-Platform,NST;,PM;  RP;,OS; ,Packrat Projects,Yes,Yes
+packrat,No,278,69,No,Cross-Platform,NST;, PM; RP;,OS; ,Packrat Projects,Yes,Yes
+miniCRAN,No,88,28,No,Cross-Platform,NRM;,RP;,,Dependency Graphs,No,No
+drat,No,95,74,No,Cross-Platform,PRM,RP;,,Drat Repositories,No,No
+workflowr,No,229,36,No,Cross-Platform,PM; OF;,Development Workflow,OS; ,GitHub Pages Website,No,No
+checkpoint,No,103,26,No,Cross-Platform,NRM;,RP;,,Pre-Config Scripting,Yes,Yes
+drake,No,481,43,No,Cross-Platform,OF;,RP;,,Pre-Config Scripting,No,No
